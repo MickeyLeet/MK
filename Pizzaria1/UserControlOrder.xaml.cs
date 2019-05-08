@@ -16,13 +16,18 @@ using System.Windows.Shapes;
 namespace Pizzaria1
 {
     /// <summary>
-    /// Interação lógica para UserControlEscolha.xam
+    /// Interaction logic for UserControlDelivery.xaml
     /// </summary>
-    public partial class UserControlEscolha : UserControl
+    public partial class UserControlDelivery : UserControl
     {
-        public UserControlEscolha()
+        public UserControlDelivery()
         {
             InitializeComponent();
+        }
+
+        private void ListViewMenu_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

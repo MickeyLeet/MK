@@ -15,9 +15,7 @@ using System.Windows.Shapes;
 
 namespace Pizzaria1
 {
-    /// <summary>
-    /// Interação lógica para MainWindow.xam
-    /// </summary>
+
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -48,7 +46,7 @@ namespace Pizzaria1
                     break;
                 case 1:
                     GridPrincipal.Children.Clear();
-                    GridPrincipal.Children.Add(new UserControlEscolha());
+                    GridPrincipal.Children.Add(new UserControlDelivery());
                     break;
                 default:
                     break;
