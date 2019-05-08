@@ -11,16 +11,15 @@
             <Grid Background="#FF0069C0" Height="10"/>
             <Grid Margin="5">
                 <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
-                    <TextBlock Text="Design com WPF" VerticalAlignment="Center" FontSize="20" FontFamily="Champagne &amp; Limousines" Margin="20 0"/>
-                    <Button Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray">
-                        <materialDesign:PackIcon Kind="FacebookBox"/>
-                    </Button>
-                    <Button Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray">
-                        <materialDesign:PackIcon Kind="TwitterBox"/>
+                    <!--<Button Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray">-->
+                        <!--<materialDesign:PackIcon Kind="FacebookBox"/>-->
+                    <!--</Button>-->
+                    <!--<Button Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray">
+                        --><!--<materialDesign:PackIcon Kind="TwitterBox"/>--><!--
                     </Button>
                     <Button Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray">
                         <materialDesign:PackIcon Kind="GithubBox"/>
-                    </Button>
+                    </Button>-->
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="10 0">
                     <Button Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray">
@@ -44,44 +43,58 @@
             <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.2}">
                 <Grid x:Name="GridCursor" Margin="0 100 0 0" Background="#FF0069C0" Width="10" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top"/>
             </materialDesign:TransitioningContent>
-            <ListView x:Name="ListViewMenu" Margin="0 100" Foreground="LightGray" FontFamily="Champagne &amp; Limousines" FontSize="18" SelectionChanged="ListViewMenu_SelectionChanged" SelectedIndex="0">
+            <ListView x:Name="ListViewMenu" Margin="0,100,0,197" Foreground="LightGray" FontFamily="Champagne &amp; Limousines" FontSize="18" SelectionChanged="ListViewMenu_SelectionChanged" SelectedIndex="0">
                 <ListViewItem Height="60">
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="Home" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock Text="Início" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+                        <TextBlock Text="Main" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
                 <ListViewItem Height="60">
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="FoodForkDrink" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock Text="Escolha" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
-                    </StackPanel>
-                </ListViewItem>
-                <ListViewItem Height="60">
-                    <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon Kind="FormatListBulleted" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock Text="Cardápio" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+                        <TextBlock Text="Order" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
                 <ListViewItem Height="60">
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="TruckDelivery" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock Text="Entrega" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+                        <TextBlock Text="Deliver" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
                 <ListViewItem Height="60">
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="Cash" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock Text="Pagamento de Entrega" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+                        <TextBlock Text="Pay" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem Height="60">
-                    <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon Kind="AccountStar" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock Text="Clientes" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
-                    </StackPanel>
-                </ListViewItem>
+             
+                
+                
+                
+              
+                
+
+
+
+
+             
+
             </ListView>
+
+
+
+            <ListView x:Name="ListViewLogin" Margin="0,550,0,0" Foreground="#FF0069C0" FontFamily="Champagne &amp; Limousines" FontSize="18" SelectionChanged="ListViewMenu_SelectionChanged" SelectedIndex="0">
+                <ListViewItem Height="50" >
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="Login" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
+                        <TextBlock Text="Log In" FontSize="17" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="20 0"/>
+                    </StackPanel>
+                </ListViewItem>
+
+            </ListView>
+
+
         </Grid>
         
     </Grid>
