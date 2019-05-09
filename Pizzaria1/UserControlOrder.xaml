@@ -6,113 +6,117 @@
              xmlns:local="clr-namespace:Pizzaria1"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              mc:Ignorable="d" d:DesignWidth="800" Height="556.9">
-    <Grid>
-        <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.8}"></materialDesign:TransitioningContent>
 
-        <Grid>
-            <!--<Grid.ColumnDefinitions>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-            </Grid.RowDefinitions>-->
-
-            <!--Foreground="LightGray"-->
+        <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.8}">
+    <Grid Margin="0,0,0,0" Grid.RowSpan="2">
 
 
-            <!--<ListView x:Name="ListViewMenu" Margin="0,0,0,-0.4"  FontFamily="Champagne &amp; Limousines" FontSize="18" SelectionChanged="ListViewMenu_SelectionChanged" SelectedIndex="0">
-                -->
+
+
+            <DockPanel VerticalAlignment="Top" HorizontalAlignment="Left" Margin="112,0,0,0" >
+
+
+            <ListViewItem Height="60" Margin="0,0,0,0" HorizontalAlignment="Left" Width="130">
+                    <StackPanel Orientation="Horizontal" Background="#FF2196F3">
+                    <materialDesign:PackIcon Kind="Home" Width="30" Height="30" VerticalAlignment="Center" Foreground="White" Margin="5"/>
+                    <TextBlock Text="Pizza" FontSize="18" VerticalAlignment="Center" Margin="15 0" Foreground="#FF7FFFA1"/>
+                </StackPanel>
+            </ListViewItem>
+
+            <ListViewItem Height="60" HorizontalAlignment="Left" Width="135">
+                    <StackPanel Orientation="Horizontal" Background="#FF2196F3">
+                    <materialDesign:PackIcon Kind="Home" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
+                    <TextBlock Text="Burgers" FontSize="17" VerticalAlignment="Center" Margin="15 0" />
+                </StackPanel>
+            </ListViewItem>
+
+
+            <ListViewItem Height="60" HorizontalAlignment="Left" Width="135">
+                    <StackPanel Orientation="Horizontal" Background="#FF2196F3">
+                    <materialDesign:PackIcon Kind="Home" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
+                    <TextBlock Text="Drinks" FontSize="17" VerticalAlignment="Center" Margin="15 0"/>
+                </StackPanel>
+            </ListViewItem>
+
+
+            <ListViewItem Height="60" Width="135" HorizontalAlignment="Left">
+                    <StackPanel Orientation="Horizontal" Background="#FF2196F3">
+                    <materialDesign:PackIcon Kind="Home" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
+                    <TextBlock Text="Other" FontSize="17" VerticalAlignment="Center" Margin="15,0"/>
+                </StackPanel>
+            </ListViewItem>
+
+
+
+
+
+
+        </DockPanel>
+
+        <Image Name="FirstImage" Source="Images/chipolo.jpg" Width="120" Height="120" Margin="15,0,570,205"></Image>
+        <Image Name="SecondImage" Source="Images/dolche.jpg" Width="120" Height="120" Margin="229,101,421,305.8"></Image>
+        <Image Name="ThirdImage" Source="Images/emilia.jpg" Width="120" Height="120" Margin="414,102,236,304.8"></Image>
+        <Image Name="fourthImage" Source="Images/hawai.jpg" Width="120" Height="120" Margin="601,102,49,304.8"></Image>
+        <Image Name="fifthImage" Source="Images/julien.jpg" Width="120" Height="120" Margin="48,294,602,112.8"></Image>
+        <Image Name="sixthImage" Source="Images/Margarita.jpg" Width="120" Height="120" Margin="231,294,419,112.8"></Image>
+        <Image Name="seventhImage" Source="Images/munhaten.jpg" Width="120" Height="120" Margin="416,294,234,112.8"></Image>
+        <Image Name="eighthImage" Source="Images/primera.jpg" Width="120" Height="120" Margin="601,294,49,112.8"></Image>
+
+
+            <TextBlock Name="First_Textblock" Background="#FF2196F3" Width="120" Height="20" Margin="62,96,618,440.8"></TextBlock>
+            <TextBlock Name="Second_Textblock" Background="#FF2196F3" Width="120" Height="20" Margin="244,96,436,440.8"></TextBlock>
+            <TextBlock Name="Third_Textblock" Background="#FF2196F3" Width="120" Height="20" Margin="429,96,251,440.8"></TextBlock>
+            <TextBlock Name="fourty_Textblock" Background="#FF2196F3" Width="120" Height="20" Margin="616,96,64,440.8"></TextBlock>
+            <TextBlock Name="fifth_Textblock" Background="#FF2196F3" Width="120" Height="20" Margin="64,289,616,247.8"></TextBlock>
+            <TextBlock Name="sixth_Textblock" Background="#FF2196F3" Width="120" Height="20" Margin="246,289,434,247.8"></TextBlock>
+            <TextBlock Name="seventh_Textblock"  Background="#FF2196F3" Width="120" Height="20" Margin="431,289,249,247.8"></TextBlock>
+            <TextBlock Name="eighth_Textblock" Background="#FF2196F3" Width="120" Height="20" Margin="616,289,64,247.8"></TextBlock>
+
+
+
+
+            <StackPanel Margin="0,121,0,48.8" >
             <!--==============-->
-            <!--
-                <ListViewItem Height="150" Width="150" Background="Red"/>
-                -->
-            <!--==============-->
-            <!--
-            </ListView>-->
+            <!--==================================================-->
+            <!--==================================================-->
 
-            <DockPanel VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,0,118,0" Width="682">
+            <DockPanel LastChildFill="True" Height="174" Margin="0,20,0,0" HorizontalAlignment="Center">
 
 
-                <ListViewItem Height="60" Margin="56,0,0,0">
-                    <StackPanel Orientation="Horizontal" Background="Red">
-                        <materialDesign:PackIcon Kind="Home" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock Text="Pizza" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
-                    </StackPanel>
-                </ListViewItem>
+                    <Button Background="#FF2196F3" Width="150" Margin="15,111,10,30.6" HorizontalAlignment="Left" VerticalAlignment="Center" Content="In cart"/>
+                    <Button Background="#FF2196F3" Width="150" Margin="25,111,10,30.6" HorizontalAlignment="Left" VerticalAlignment="Center" Content="In cart"/>
+                    <Button Background="#FF2196F3" Width="150" Margin="25,111,10,30.6" HorizontalAlignment="Left" VerticalAlignment="Center" Content="In cart"/>
+                    <Button Background="#FF2196F3" Width="150" Margin="25,111,15,30.6" HorizontalAlignment="Left"  VerticalAlignment="Center" Content="In cart"/>
 
-                <ListViewItem Height="60" >
-                    <StackPanel Orientation="Horizontal" Background="Red">
-                        <materialDesign:PackIcon Kind="Home" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock Text="Burgers" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
-                    </StackPanel>
-                </ListViewItem>
+            </DockPanel>
+            <!--==================================================-->
 
 
-                <ListViewItem Height="60" Width="145">
-                    <StackPanel Orientation="Horizontal" Background="Red">
-                        <materialDesign:PackIcon Kind="Home" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock Text="Drinks" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
-                    </StackPanel>
-                </ListViewItem>
+            <DockPanel LastChildFill="True" Height="174" Margin="0,20,0,0" HorizontalAlignment="Center">
 
 
-                <ListViewItem Height="60" Width="145">
-                    <StackPanel Orientation="Horizontal" Background="Red">
-                        <materialDesign:PackIcon Kind="Home" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock Text="Other" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
-                    </StackPanel>
-                </ListViewItem>
+                    <Button Background="#FF2196F3" Width="150" Margin="15,111,10,30.6" HorizontalAlignment="Left" VerticalAlignment="Center" Content="In cart"/>
+                    <Button Background="#FF2196F3" Width="150" Margin="25,111,10,30.6" HorizontalAlignment="Left" VerticalAlignment="Center" Content="In cart"/>
+                    <Button Background="#FF2196F3" Width="150" Margin="25,111,10,30.6" HorizontalAlignment="Left" VerticalAlignment="Center" Content="In cart"/>
+                    <Button Background="#FF2196F3" Width="150" Margin="25,111,15,30.6" HorizontalAlignment="Left"  VerticalAlignment="Center" Content="In cart"/>
 
 
-
-
+                <!--<Image Margin="10" Width="200" Height="200" Source="Assets/09-calabrese-tradizionale.jpg" Stretch="UniformToFill"/>-->
 
 
             </DockPanel>
 
 
-
-            <StackPanel Margin="0,72,0,-0.4" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <!--==================================================-->
-
-
-                <DockPanel LastChildFill="True" Width="637" Height="174" Margin="80,20,80,0">
-
-                    <Button Background="Red" Width="150" Margin="10,80,0,0" HorizontalAlignment="Center" Content="In cart"/>
-                    <Button Background="Red" Width="150" Margin="10,80,0,0" HorizontalAlignment="Center" Content="In cart"/>
-                    <Button Background="Red" Width="150" Margin="10,80,0,0" HorizontalAlignment="Center" Content="In cart"/>
-                    <Button Background="Red" Width="150" Margin="10,80,0,0" HorizontalAlignment="Center" Content="In cart"/>
-
-                </DockPanel>
-                <!--==================================================-->
-
-
-                <DockPanel LastChildFill="True" Width="637" Height="174" Margin="80,20,80,0">
-
-                    <Button Background="Red" Width="150" Margin="10,80,0,0" Content="In cart"/>
-                    <Button Background="Red" Width="150" Margin="10,80,0,0" Content="In cart"/>
-                    <Button Background="Red" Width="150" Margin="10,80,0,0" Content="In cart"/>
-                    <Button Background="Red" Width="150" Margin="10,80,0,0" Content="In cart"/>
-
-                </DockPanel>
-
-
-                <!--==================================================-->
+            <!--==================================================-->
 
 
 
-            </StackPanel>
-        </Grid>
-
-
-
-
+        
+        </StackPanel>
     </Grid>
+        </materialDesign:TransitioningContent>
+
+
+
+
 </UserControl>

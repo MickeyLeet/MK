@@ -129,5 +129,21 @@
     <Resource Include="Assets\pizzabar.jpg" />
     <Resource Include="Assets\size_960_16_9_pizza2.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\chipolo.jpg" />
+    <Resource Include="Images\dolche.jpg" />
+    <Resource Include="Images\emilia.jpg" />
+    <Resource Include="Images\hawai.jpg" />
+    <Resource Include="Images\julien.jpg" />
+    <Resource Include="Images\Margarita.jpg" />
+    <Resource Include="Images\munhaten.jpg" />
+    <Resource Include="Images\peperoni.jpg" />
+    <Resource Include="Images\primera.jpg" />
+    <Resource Include="Images\ProshutoKonFyngi.jpg" />
+    <Resource Include="Images\provansal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\emilia.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
