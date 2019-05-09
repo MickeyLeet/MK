@@ -80,44 +80,26 @@
 
 
             <StackPanel Margin="0,72,0,-0.4" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <DockPanel LastChildFill="True" Width="790" Height="174">
+                <!--==================================================-->
 
-                    <GroupItem Width="130" Height="135" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30">
-                        <Button Background="Red" Margin="0,80,0,0"></Button>
-                    </GroupItem>
 
-                    <GroupItem Width="130" Height="120" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30">
-                        <Button Background="Red" Margin="0,80,0,0"></Button>
-                    </GroupItem>
+                <DockPanel LastChildFill="True" Width="637" Height="174" Margin="80,20,80,0">
 
-                    <GroupItem Width="130" Height="120" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30">
-                        <Button Background="Red" Margin="0,80,0,0"></Button>
-                    </GroupItem>
-
-                    <GroupItem Width="130" Height="120" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30">
-                        <Button Background="Red" Margin="0,80,0,0"></Button>
-                    </GroupItem>
+                    <Button Background="Red" Width="150" Margin="10,80,0,0" HorizontalAlignment="Center" Content="In cart"/>
+                    <Button Background="Red" Width="150" Margin="10,80,0,0" HorizontalAlignment="Center" Content="In cart"/>
+                    <Button Background="Red" Width="150" Margin="10,80,0,0" HorizontalAlignment="Center" Content="In cart"/>
+                    <Button Background="Red" Width="150" Margin="10,80,0,0" HorizontalAlignment="Center" Content="In cart"/>
 
                 </DockPanel>
                 <!--==================================================-->
 
 
-                <DockPanel LastChildFill="True" Width="790" Height="202">
-                    <GroupItem Width="130" Height="135" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30">
-                        <Button Background="Red" Margin="0,80,0,0" Height="30"></Button>
-                    </GroupItem>
+                <DockPanel LastChildFill="True" Width="637" Height="174" Margin="80,20,80,0">
 
-                    <GroupItem Width="130" Height="120" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30">
-                        <Button Background="Red" Margin="0,80,0,0"></Button>
-                    </GroupItem>
-
-                    <GroupItem Width="130" Height="120" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30">
-                        <Button Background="Red" Margin="0,80,0,0"></Button>
-                    </GroupItem>
-
-                    <GroupItem Width="130" Height="120" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30">
-                        <Button Background="Red" Margin="0,80,0,0"></Button>
-                    </GroupItem>
+                    <Button Background="Red" Width="150" Margin="10,80,0,0" Content="In cart"/>
+                    <Button Background="Red" Width="150" Margin="10,80,0,0" Content="In cart"/>
+                    <Button Background="Red" Width="150" Margin="10,80,0,0" Content="In cart"/>
+                    <Button Background="Red" Width="150" Margin="10,80,0,0" Content="In cart"/>
 
                 </DockPanel>
 
