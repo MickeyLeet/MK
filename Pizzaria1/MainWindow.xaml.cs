@@ -58,5 +58,10 @@ namespace Pizzaria1
             TrainsitionigContentSlide.OnApplyTemplate();
             GridCursor.Margin = new Thickness(0, (100 + (60 * index)), 0, 0);
         }
+
+        private void Settings_Button_Click(object sender, RoutedEventArgs e)
+        {
+         
+        }
     }
 }

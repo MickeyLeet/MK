@@ -77,6 +77,9 @@
     <Compile Include="UserControlRegistration.xaml.cs">
       <DependentUpon>UserControlRegistration.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControlSettings.xaml.cs">
+      <DependentUpon>UserControlSettings.xaml</DependentUpon>
+    </Compile>
     <Page Include="LoginWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -106,6 +109,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControlRegistration.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlSettings.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -158,6 +165,37 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\emilia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="burgers\big king.png" />
+    <Resource Include="burgers\cheaseburger def.png" />
+    <Resource Include="burgers\double cheaseburger.png" />
+    <Resource Include="burgers\double vopper.png" />
+    <Resource Include="burgers\gamburger.png" />
+    <Resource Include="burgers\vopper + chease.png" />
+    <Resource Include="burgers\vopper junior.png" />
+    <Resource Include="burgers\vopper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="drinks\7up.png" />
+    <Resource Include="drinks\americano.png" />
+    <Resource Include="drinks\black tea.png" />
+    <Resource Include="drinks\green tea.png" />
+    <Resource Include="drinks\kapuchino.png" />
+    <Resource Include="drinks\latte.png" />
+    <Resource Include="drinks\mirinda.png" />
+    <Resource Include="drinks\pepsi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="other\chery pie.png" />
+    <Resource Include="other\chocolate donut.png" />
+    <Resource Include="other\chocolate shake.png" />
+    <Resource Include="other\icecream kitkat.png" />
+    <Resource Include="other\icecream twix.png" />
+    <Resource Include="other\icecream.png" />
+    <Resource Include="other\strawberry donut.png" />
+    <Resource Include="other\strawberry shake.png" />
+    <Resource Include="other\vanila shake.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

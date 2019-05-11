@@ -11,18 +11,16 @@
         <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.8}">
             <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom">
                 <StackPanel>
-                    <TextBlock Text="Apenas" FontFamily="Cooper Black" Foreground="#FFC00000"/>
                     <StackPanel Margin="10">
-                        <TextBlock Text="R$ 28" FontSize="50" FontFamily="Cooper Black" Foreground="#FFC00000"/>
-                        <TextBlock Text="Calabresa" FontSize="25" FontFamily="Champagne &amp; Limousines" FontWeight="Bold" Margin="5"/>
-                        <TextBlock Text="Com anéis de cebola" FontSize="20" FontFamily="Champagne &amp; Limousines" Margin="5"/>
+                        <TextBlock Text="Hot Price ! 10$" FontSize="50" FontFamily="Cooper Black" Foreground="#FFC00000"/>
+                        <TextBlock Text="Proshuto Kon Fungi" FontSize="25" FontFamily="Champagne &amp; Limousines" FontWeight="Bold" Margin="5"/>
                         <TextBlock FontSize="18" Width="250" FontFamily="Champagne &amp; Limousines" Margin="5" TextWrapping="Wrap">
-                            Uma deliciosa combinação de Linguiça Calabresa, rodelas de cebolas frescas, 
-                        azeitonas pretas, mussarela, polpa de tomate, orégano e massa especial garante um sabor 
-                        único à Pizza de Calabresa. 12 cartuchos de 460g, cada.
+                       components:   
+                            
+Olive oil, ham, mushrooms, parsley, tomato sauce, mozzarella cheese
                         </TextBlock>
                     </StackPanel>
-                    <Button FontFamily="Champagne &amp; Limousines" Content="Pedir Agora" FontSize="18" Margin="25"/>
+                    <Button FontFamily="Champagne &amp; Limousines" Content="In cart" FontSize="18" Margin="25"/>
                 </StackPanel>
                 <Image Margin="10" Width="200" Height="200" Source="Assets/09-calabrese-tradizionale.jpg" Stretch="UniformToFill"/>
             </StackPanel>
