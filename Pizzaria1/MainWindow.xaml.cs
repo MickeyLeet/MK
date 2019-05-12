@@ -18,8 +18,10 @@ namespace Pizzaria1
 
     public partial class MainWindow : Window
     {
+            public string cartt = "null";
         public MainWindow()
         {
+            cartt = "suc";
             InitializeComponent();
         }
 
@@ -47,6 +49,10 @@ namespace Pizzaria1
                 case 1:
                     GridPrincipal.Children.Clear();
                     GridPrincipal.Children.Add(new UserControlDelivery());
+                    break;
+                case 2:
+                    GridPrincipal.Children.Clear();
+                    GridPrincipal.Children.Add(new UserControlCart());
                     break;
                 default:
                     break;
