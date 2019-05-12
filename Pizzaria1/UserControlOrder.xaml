@@ -59,7 +59,7 @@
                 <Image Name="fifthImage" Source="Images/julien.jpg" Width="120" Height="120" Margin="48,294,602,112.8"></Image>
                 <Image Name="sixthImage" Source="Images/Margarita.jpg" Width="120" Height="120" Margin="231,294,419,112.8"></Image>
                 <Image Name="seventhImage" Source="Images/munhaten.jpg" Width="120" Height="120" Margin="416,294,234,112.8"></Image>
-                <Image Name="eighthImage" Source="Images/primera.jpg" Width="120" Height="120" Margin="601,294,49,112.8"></Image>
+                <Image Name="eighthImage" Source="Images/peperoni.jpg" Width="120" Height="120" Margin="601,294,49,112.8"></Image>
 
 
                 <TextBlock Background="#FF2196F3" Width="120" Height="20" Margin="62,96,618,440.8" ></TextBlock>

@@ -167,16 +167,6 @@
     <Resource Include="Images\emilia.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="burgers\big king.png" />
-    <Resource Include="burgers\cheaseburger def.png" />
-    <Resource Include="burgers\double cheaseburger.png" />
-    <Resource Include="burgers\double vopper.png" />
-    <Resource Include="burgers\gamburger.png" />
-    <Resource Include="burgers\vopper + chease.png" />
-    <Resource Include="burgers\vopper junior.png" />
-    <Resource Include="burgers\vopper.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="drinks\7up.png" />
     <Resource Include="drinks\americano.png" />
     <Resource Include="drinks\black tea.png" />
@@ -196,6 +186,16 @@
     <Resource Include="other\strawberry donut.png" />
     <Resource Include="other\strawberry shake.png" />
     <Resource Include="other\vanila shake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="burgers\big king.png" />
+    <Resource Include="burgers\cheaseburger def.png" />
+    <Resource Include="burgers\double cheaseburger.png" />
+    <Resource Include="burgers\double vopper.png" />
+    <Resource Include="burgers\gamburger.png" />
+    <Resource Include="burgers\vopper + chease.png" />
+    <Resource Include="burgers\vopper junior.png" />
+    <Resource Include="burgers\vopper.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
