@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -50,8 +51,6 @@ namespace Pizzaria1
             seventh_Textblock.Margin = new Thickness(450, 289, 249, 247.8);
             eighth_Textblock.Text = "Peperoni";
             eighth_Textblock.Margin = new Thickness(636, 289, 64, 247.8);
-
-
 
 
 
@@ -138,7 +137,6 @@ namespace Pizzaria1
 
         private void Other_Btn_Click(object sender, RoutedEventArgs e)
         {
-            page = 4;
             First_Textblock.Text = "Chery Pie";
             First_Textblock.Margin = new Thickness(83, 96, 624, 440.8);
             Second_Textblock.Text = "Chocolate donut";
@@ -168,8 +166,69 @@ namespace Pizzaria1
             eighthImage.Source = new BitmapImage(new Uri("other/strawberry shake.png", UriKind.Relative));
 
 
+        }
+
+        private async void Blink()
+        {
+            int i = 0;
+            while (i !=2)
+            {
+                await Task.Delay(500);
+                LCart.Opacity = 1;
+                PCart.Opacity = 1;
+                await Task.Delay(500);
+                LCart.Opacity = 0;
+                PCart.Opacity = 0;
+                i++;
+            }
+        }
+
+
+        private void FirstAdd_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Blink();
+        }
+
+        private void SecondAdd_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Blink();
 
         }
 
+        private void ThirdAdd_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Blink();
+
+        }
+
+        private void FourtyAdd_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Blink();
+
+        }
+
+        private void FifthAdd_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Blink();
+
+        }
+
+        private void SixthAdd_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Blink();
+
+        }
+
+        private void SeventhAdd_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Blink();
+
+        }
+
+        private void EighthAdd_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Blink();
+
+        }
     }
 }
