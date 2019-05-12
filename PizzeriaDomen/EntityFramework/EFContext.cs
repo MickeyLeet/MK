@@ -12,5 +12,7 @@ namespace PizzeriaDomen.EntityFramework
     {
         public EFContext() : base("DbConnection") { }
         public DbSet<User> Users { get; set; }
+        public DbSet<Order> Orders { get; set; }
+
     }
 }

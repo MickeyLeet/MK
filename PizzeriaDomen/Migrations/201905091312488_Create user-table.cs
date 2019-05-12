@@ -17,12 +17,30 @@ namespace PizzeriaDomen.Migrations
                         Email = c.String(nullable: false, maxLength: 200),
                     })
                 .PrimaryKey(t => t.ID);
-            
+
+
+
+
+
+
+            CreateTable(
+                "dbo.Orders",
+                c => new
+                {
+                    ID = c.Int(nullable: false, identity: true),
+                    OrderComp = c.DateTime(nullable: false),
+                    OrderDate = c.String(nullable: false, maxLength: 500),
+                    OrderStatus = c.String(nullable: false, maxLength: 200),
+                })
+                .PrimaryKey(t => t.ID);
+
+
         }
         
         public override void Down()
         {
             DropTable("dbo.Users");
+            DropTable("dbo.Orders");
         }
     }
 }

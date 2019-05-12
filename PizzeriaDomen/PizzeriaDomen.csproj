@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Order.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="EntityFramework\EFContext.cs" />
     <Compile Include="Migrations\201905091312488_Create user-table.cs" />
