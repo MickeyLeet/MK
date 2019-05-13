@@ -18,10 +18,8 @@ namespace Pizzaria1
 
     public partial class MainWindow : Window
     {
-            public string cartt = "null";
         public MainWindow()
         {
-            cartt = "suc";
             InitializeComponent();
         }
 
@@ -68,6 +66,23 @@ namespace Pizzaria1
         private void Settings_Button_Click(object sender, RoutedEventArgs e)
         {
          
+        }
+
+        
+                    LoginWindow lg = new LoginWindow();
+        private void ListViewLogin_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            int indexh = ListViewLogin.SelectedIndex;
+            MoveCursorMenu(indexh);
+
+            switch (indexh)
+            {
+                case 0:
+                    lg.Show();
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }

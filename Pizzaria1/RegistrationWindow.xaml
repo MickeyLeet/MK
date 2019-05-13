@@ -5,9 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Pizzaria1"
         mc:Ignorable="d"
-        Title="RegistrationWindow" Height="600" Width="500">
-    <Grid Name="MainGrid">
+        Title="RegistrationWindow" Height="650" Width="500" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None">
+    
+    <Grid Name="MainGrid" Background="DimGray" >
         <Grid.RowDefinitions>
+            <RowDefinition Height="40*"></RowDefinition>
+            <RowDefinition Height="40*"></RowDefinition>
+            <RowDefinition Height="40*"></RowDefinition>
+            <RowDefinition Height="40*"></RowDefinition>
+            <RowDefinition Height="40*"></RowDefinition>
+            <RowDefinition Height="40*"></RowDefinition>
+            <RowDefinition Height="40*"></RowDefinition>
+            <RowDefinition Height="40*"></RowDefinition>
+            <RowDefinition Height="40*"></RowDefinition>
+            <RowDefinition Height="40*"></RowDefinition>
             <RowDefinition Height="40*"></RowDefinition>
             <RowDefinition Height="40*"></RowDefinition>
             <RowDefinition Height="40*"></RowDefinition>
@@ -18,15 +29,31 @@
             <ColumnDefinition Width="70*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <Grid.Background>
-            <ImageBrush x:Name="imgBackGrond" Stretch="UniformToFill"></ImageBrush>
-        </Grid.Background>
 
-        <Border Background="Green" Grid.Column="1" Grid.Row="1">
+        <!--<Border Background="Green" Grid.Column="1" Grid.Row="1">
             <Border.Effect>
                 <DropShadowEffect ShadowDepth="8" Color="Black" BlurRadius="30" Direction="180" RenderingBias="Quality"></DropShadowEffect>
             </Border.Effect>
 
-        </Border>
+        </Border>-->
+
+        <Label Grid.Column="1" FontSize="26" VerticalAlignment="Bottom">Login</Label>
+        <TextBox Background="WhiteSmoke" Name="TextBox_Login" Grid.Column="1" Grid.Row="1" FontSize="24"></TextBox>
+
+        <Label Grid.Column="1" Grid.Row="2" FontSize="26" VerticalAlignment="Bottom">Gmail</Label>
+        <TextBox Background="WhiteSmoke" Name="TextBox_Gmail" Grid.Column="1" Grid.Row="3" FontSize="24"></TextBox>
+
+        <Label Grid.Column="1" Grid.Row="4" FontSize="26" VerticalAlignment="Bottom">Name</Label>
+        <TextBox Background="WhiteSmoke" Name="TextBox_Name" Grid.Column="1" Grid.Row="5" FontSize="24"></TextBox>
+
+        <Label Grid.Column="1" Grid.Row="6" FontSize="26" VerticalAlignment="Bottom">Age</Label>
+        <TextBox Background="WhiteSmoke" Name="TextBox_Age" Grid.Column="1" Grid.Row="7" FontSize="24"></TextBox>
+
+        <Label Grid.Column="1" Grid.Row="8" FontSize="26" VerticalAlignment="Bottom">Password</Label>
+        <PasswordBox Background="WhiteSmoke" BorderBrush="Transparent" Name="PasswordBox_Main" Grid.Column="1" Grid.Row="9" FontSize="24"></PasswordBox>
+
+        <Button Name="Button_Accept" Grid.Column="1" Grid.Row="11" Width="160" Height="50" FontSize="24" Margin="223.4,1,10.2,45" Grid.RowSpan="2" Click="Button_Accept_Click">Accept</Button>
+        <Button Name="Button_Cancel" Grid.Column="1" Grid.Row="11" Width="160"  Height="50" FontSize="24" Margin="0.4,0.2,233.2,45" Grid.RowSpan="2" RenderTransformOrigin="0.5,0.504" Click="Button_Cancel_Click">Cancel</Button>
+
     </Grid>
 </Window>

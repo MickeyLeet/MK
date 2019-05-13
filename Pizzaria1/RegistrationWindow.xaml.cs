@@ -23,5 +23,21 @@ namespace Pizzaria1
         {
             InitializeComponent();
         }
+
+        private void Button_Cancel_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Button_Accept_Click(object sender, RoutedEventArgs e)
+        {
+            if (TextBox_Login != null && TextBox_Name != null && TextBox_Gmail != null && PasswordBox_Main != null)
+            {
+                //DataUser
+                MessageBox.Show("rr");
+            }
+            else
+                MessageBox.Show("Input All Lines");
+        }
     }
 }

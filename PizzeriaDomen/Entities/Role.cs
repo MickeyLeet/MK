@@ -7,16 +7,12 @@ using System.Threading.Tasks;
 
 namespace PizzeriaDomen.Entities
 {
-    public class Order
+   public class Role
     {
-
         [Key]
         public int ID { get; set; }
+
         [Required]
-        public string OrderComp { get; set; }
-        [Required]
-        public DateTime OrderDate { get; set; }
-        [Required]
-        public string OrderStatus { get; set; }
+        public string Name { get; set; }
     }
 }

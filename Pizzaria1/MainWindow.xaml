@@ -78,8 +78,8 @@
 
 
 
-            <ListView x:Name="ListViewLogin" Margin="0,550,0,0" Foreground="#FF0069C0" FontFamily="Champagne &amp; Limousines" FontSize="18" SelectionChanged="ListViewMenu_SelectionChanged" SelectedIndex="0" Background="LightGray">
-                <ListViewItem Height="50" >
+            <ListView  x:Name="ListViewLogin" Margin="0,550,0,0" Foreground="#FF0069C0" FontFamily="Champagne &amp; Limousines" FontSize="18" SelectionChanged="ListViewLogin_SelectionChanged" SelectedIndex="0" Background="LightGray">
+                <ListViewItem Height="50">
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="Login" Width="30" Height="30" VerticalAlignment="Center" Foreground="#FFD3D3D3" Margin="5"/>
                         <TextBlock Text="Log In" FontSize="17" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#FFD3D3D3" Margin="20 0"/>

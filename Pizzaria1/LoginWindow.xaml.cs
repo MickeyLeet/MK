@@ -28,5 +28,12 @@ namespace Pizzaria1
         {
 
         }
+
+        private void Register_Btn_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+            RegistrationWindow registrationWindow = new RegistrationWindow();
+            registrationWindow.Show();
+        }
     }
 }
