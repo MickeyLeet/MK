@@ -23,11 +23,11 @@ namespace PizzeriaDomen.Entities
         [Required, StringLength(200)]
         public string Email { get; set; }
 
-        [Required, ForeignKey("Order")]
-        public int OrderID { get; set; }
+        //[Required, ForeignKey("Order")]
+        //public int OrderID { get; set; }
 
-        [Required, ForeignKey("Role")]
-        public int RoleID { get; set; }
+        //[Required, ForeignKey("Role")]
+        //public int RoleID { get; set; }
 
 
     }

@@ -4,36 +4,62 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Pizzaria1"
-        mc:Ignorable="d"
-        Title="LoginWindow" Height="650" Width="650">
-    <Grid Name='Main'>
+        mc:Ignorable="d" 
+        Height="650" Width="600"
+        Title="LoginWindow">
+    <Border Background="{StaticResource WordBlueBrush}">
+        <Grid>
+            <!-- Blue background image -->
+            <Grid.Background>
+                <ImageBrush TileMode="Tile" ViewportUnits="Absolute" Viewport="0 0 500 500" ImageSource="Images/Backgrounds/emoji-background.png" />
+            </Grid.Background>
 
-        <Grid Name="MainGrid" Background="DimGray" >
-            <Grid.RowDefinitions>
-                <RowDefinition Height="40*"></RowDefinition>
-                <RowDefinition Height="40*"></RowDefinition>
-                <RowDefinition Height="40*"></RowDefinition>
-                <RowDefinition Height="40*"></RowDefinition>
-                <RowDefinition Height="40*"></RowDefinition>
-                <RowDefinition Height="40*"></RowDefinition>
-                <RowDefinition Height="40*"></RowDefinition>
-                <RowDefinition Height="40*"></RowDefinition>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width ="50*"></ColumnDefinition>
-                <ColumnDefinition Width="470*"></ColumnDefinition>
-                <ColumnDefinition Width="70*"></ColumnDefinition>
-            </Grid.ColumnDefinitions>
+            <!-- Main content scroll -->
+            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+                <StackPanel 
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    TextBlock.TextAlignment="Center">
 
-            <Label Grid.Column="1" Grid.Row="1" FontSize="28" VerticalAlignment="Bottom">Login</Label>
-            <TextBox Name="LLogin_TextBox" Grid.Column="1" Grid.Row="2" Background="WhiteSmoke" FontSize="24"></TextBox>
-            <Label Grid.Column="1" Grid.Row="3" FontSize="28" VerticalAlignment="Bottom">Login</Label>
-            <PasswordBox Name="LPasswordBod" Grid.Column="1" Grid.Row="4" Background="WhiteSmoke"></PasswordBox>
+                    <!-- Login main content white box -->
+                    <Border Background="{StaticResource ForegroundLightBrush}" 
+                            CornerRadius="10"
+                            Padding="15 50 15 15"
+                            Width="330"
+                            Margin="50 50 50 0">
 
-            <Button Name="Register_Btn" Grid.Column="1" Grid.Row="6" Width="320" Height="50" FontSize="24" Click="Register_Btn_Click">Registration Now</Button>
-            <Button Name="AcceptLogin_Btn" Grid.Column="1" Grid.Row="7" Width="320" Height="50" FontSize="24">Accept</Button>
+                        <StackPanel>
 
+                            <!-- Sign Up header -->
+                            <TextBlock Text="Sign In" 
+                                   FontSize="{StaticResource FontSizeLarge}" 
+                                   FontFamily="{StaticResource LatoRegular}"
+                                   Foreground="{StaticResource WordBlueBrush}" />
 
+                            <!-- Sign up subtext-->
+                            <TextBlock Text="Must be tasty and fast" 
+                                       FontSize="{StaticResource FontSizeRegular}"
+                                       Foreground="{StaticResource ForegroundDarkBrush}"
+                                       Margin="0 0 0 20"
+                                       />
+
+                            <!-- Email -->
+                            <TextBox Tag="Email" />
+
+                            <!-- Password -->
+                            <TextBox Tag="Password" Margin="0 0 0 30" />
+
+                            <!-- Next button -->
+                            <Button Content="Next" HorizontalAlignment="Center" />
+
+                        </StackPanel>
+
+                    </Border>
+
+                    <Button Style="{StaticResource TextButton}" Content="Registration" HorizontalAlignment="Center" Click="Button_Click_1" />
+
+                </StackPanel>
+            </ScrollViewer>
         </Grid>
-    </Grid>
+    </Border>
 </Window>

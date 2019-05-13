@@ -1,4 +1,5 @@
 ﻿using PizzeriaDomen.Entities;
+using PizzeriaDomen.EntityFramework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,12 +8,12 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
-using Context = PizzeriaDomen.Entities.Context;
+
+
 
 namespace PizzeriaService
 {
     [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]
-
     //[DataContractFormat]
     //[DataContract]
     //public class DataUser
@@ -53,9 +54,14 @@ namespace PizzeriaService
     //}
 
 
-    public class UserService : IUserContract
+    public class UserService : IUserService
     {
+        ICallBack callBack
+        {
+            get => OperationContext.Current.GetCallbackChannel<ICallBack>();
+        }
 
+        EFContext context = new EFContext();
 
 
 
@@ -66,18 +72,18 @@ namespace PizzeriaService
 
         //public void AddUser(DataUser dataUser)
         //{
-            //Context context = new Context();
+        //Context context = new Context();
 
-            //User user = new User()
-            //{
-            //    Name = dataUser.Name,
-            //    Login = dataUser.Login,
-            //    Password = dataUser.Password,
-            //    RoleID = 2
-            //};
+        //User user = new User()
+        //{
+        //    Name = dataUser.Name,
+        //    Login = dataUser.Login,
+        //    Password = dataUser.Password,
+        //    RoleID = 2
+        //};
 
-            //context.users.Add(user);
-            //context.SaveChanges();
+        //context.users.Add(user);
+        //context.SaveChanges();
         //}
 
         //public DataUser GetUser(string login, string password)
@@ -98,20 +104,71 @@ namespace PizzeriaService
         //    return dataUsers;
         //}
 
-        public void Login(string Login, string Password)
+
+        void IUserService.Registrer(string Login, string Email, string Password, string RepeatPassword)
         {
-            throw new NotImplementedException();
+            if (Login.Length < 1)
+            {
+                callBack.Error("Введіть логін");
+                return;
+            }
+
+            if (Email.Length < 1)
+            {
+                callBack.Error("Введіть пошту");
+                return;
+            }
+
+            if (context.Users.FirstOrDefault((x) => x.Email == Email) != null)
+            {
+                callBack.Error("Користувач з такою поштою вже зареєстрований");
+                return;
+            }
+
+            if (RepeatPassword != Password)
+            {
+                callBack.Error("Паролі не збігаються");
+                return;
+            }
+
+            string hashPassword = CHash.CreateMD5(Password);
+
+            context.Users.Add(new PizzeriaDomen.Entities.User { Login = Login, Password = hashPassword, Email = Email });
+            context.SaveChanges();
+
+            //public void UpdateUser(DataUser dataUser)
+            //{
+
+            //}
+        }
+        void IUserService.Login(string Login, string Password)
+        {
+            if (Login.Length < 1)
+            {
+                callBack.Error("Введіть логін");
+                return;
+            }
+
+            if (Password.Length < 1)
+            {
+                callBack.Error("Введіть пароль");
+                return;
+            }
+
+            string hashPassword = CHash.CreateMD5(Password);
+
+
+            User user = context.Users.FirstOrDefault((x) => x.Login == Login && x.Password == hashPassword);
+            if (user != null) 
+            {
+                
+            }
+            else
+            {
+                callBack.Error("Не правильно введений логін чи пароль");
+            }
         }
 
-        public void Registrer(string Login, string Email, string Password, string RepeatPassword)
-        {
-            throw new NotImplementedException();
-        }
-
-        //public void UpdateUser(DataUser dataUser)
-        //{
-            
-        //}
     }
 
 

@@ -31,13 +31,13 @@ namespace Pizzaria1
 
         private void Button_Accept_Click(object sender, RoutedEventArgs e)
         {
-            if (TextBox_Login != null && TextBox_Name != null && TextBox_Gmail != null && PasswordBox_Main != null)
-            {
-                //DataUser
-                MessageBox.Show("rr");
-            }
-            else
-                MessageBox.Show("Input All Lines");
+            //if (TextBox_Login != null && TextBox_Name != null && TextBox_Gmail != null && PasswordBox_Main != null)
+            //{
+            //    //DataUser
+            //    MessageBox.Show("rr");
+            //}
+            //else
+            //    MessageBox.Show("Input All Lines");
         }
     }
 }

@@ -4,56 +4,66 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Pizzaria1"
-        mc:Ignorable="d"
-        Title="RegistrationWindow" Height="650" Width="500" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None">
-    
-    <Grid Name="MainGrid" Background="DimGray" >
-        <Grid.RowDefinitions>
-            <RowDefinition Height="40*"></RowDefinition>
-            <RowDefinition Height="40*"></RowDefinition>
-            <RowDefinition Height="40*"></RowDefinition>
-            <RowDefinition Height="40*"></RowDefinition>
-            <RowDefinition Height="40*"></RowDefinition>
-            <RowDefinition Height="40*"></RowDefinition>
-            <RowDefinition Height="40*"></RowDefinition>
-            <RowDefinition Height="40*"></RowDefinition>
-            <RowDefinition Height="40*"></RowDefinition>
-            <RowDefinition Height="40*"></RowDefinition>
-            <RowDefinition Height="40*"></RowDefinition>
-            <RowDefinition Height="40*"></RowDefinition>
-            <RowDefinition Height="40*"></RowDefinition>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width ="50*"></ColumnDefinition>
-            <ColumnDefinition Width="470*"></ColumnDefinition>
-            <ColumnDefinition Width="70*"></ColumnDefinition>
-        </Grid.ColumnDefinitions>
+       mc:Ignorable="d" 
+        Height="650" Width="600"
+        Title="RegistrationWindow">
 
+    <Border Background="{StaticResource WordBlueBrush}">
+        <Grid>
+            <!-- Blue background image -->
+            <Grid.Background>
+                <ImageBrush TileMode="Tile" ViewportUnits="Absolute" Viewport="0 0 500 500" ImageSource="Images/Backgrounds/emoji-background.png" />
+            </Grid.Background>
 
-        <!--<Border Background="Green" Grid.Column="1" Grid.Row="1">
-            <Border.Effect>
-                <DropShadowEffect ShadowDepth="8" Color="Black" BlurRadius="30" Direction="180" RenderingBias="Quality"></DropShadowEffect>
-            </Border.Effect>
+            <!-- Main content scroll -->
+            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+                <StackPanel 
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    TextBlock.TextAlignment="Center">
 
-        </Border>-->
+                    <!-- Login main content white box -->
+                    <Border Background="{StaticResource ForegroundLightBrush}" 
+                            CornerRadius="10"
+                            Padding="15 50 15 15"
+                            Width="462"
+                            Margin="50 50 50 0" Height="498">
 
-        <Label Grid.Column="1" FontSize="26" VerticalAlignment="Bottom">Login</Label>
-        <TextBox Background="WhiteSmoke" Name="TextBox_Login" Grid.Column="1" Grid.Row="1" FontSize="24"></TextBox>
+                        <StackPanel>
 
-        <Label Grid.Column="1" Grid.Row="2" FontSize="26" VerticalAlignment="Bottom">Gmail</Label>
-        <TextBox Background="WhiteSmoke" Name="TextBox_Gmail" Grid.Column="1" Grid.Row="3" FontSize="24"></TextBox>
+                            <!-- Sign Up header -->
+                            <TextBlock Text="Sign Up" 
+                                   FontSize="{StaticResource FontSizeLarge}" 
+                                   FontFamily="{StaticResource LatoRegular}"
+                                   Foreground="{StaticResource WordBlueBrush}" />
 
-        <Label Grid.Column="1" Grid.Row="4" FontSize="26" VerticalAlignment="Bottom">Name</Label>
-        <TextBox Background="WhiteSmoke" Name="TextBox_Name" Grid.Column="1" Grid.Row="5" FontSize="24"></TextBox>
+                            <!-- Sign up subtext-->
+                            <TextBlock Text="Must be tasty and fast" 
+                                       FontSize="{StaticResource FontSizeRegular}"
+                                       Foreground="{StaticResource ForegroundDarkBrush}"
+                                       Margin="0 0 0 20"
+                                       />
 
-        <Label Grid.Column="1" Grid.Row="6" FontSize="26" VerticalAlignment="Bottom">Age</Label>
-        <TextBox Background="WhiteSmoke" Name="TextBox_Age" Grid.Column="1" Grid.Row="7" FontSize="24"></TextBox>
+                            <!-- Email -->
+                            <TextBox Tag="Login" />
 
-        <Label Grid.Column="1" Grid.Row="8" FontSize="26" VerticalAlignment="Bottom">Password</Label>
-        <PasswordBox Background="WhiteSmoke" BorderBrush="Transparent" Name="PasswordBox_Main" Grid.Column="1" Grid.Row="9" FontSize="24"></PasswordBox>
+                            <!-- Password -->
+                            <TextBox Tag="Email"/>
 
-        <Button Name="Button_Accept" Grid.Column="1" Grid.Row="11" Width="160" Height="50" FontSize="24" Margin="223.4,1,10.2,45" Grid.RowSpan="2" Click="Button_Accept_Click">Accept</Button>
-        <Button Name="Button_Cancel" Grid.Column="1" Grid.Row="11" Width="160"  Height="50" FontSize="24" Margin="0.4,0.2,233.2,45" Grid.RowSpan="2" RenderTransformOrigin="0.5,0.504" Click="Button_Cancel_Click">Cancel</Button>
+                            <TextBox Tag="Password" Margin="0 0 0 30" />
+                            <TextBox Tag="Repeat Password" Margin=" 0 -15 0 0"></TextBox>
+                            <Button Content="Next" HorizontalAlignment="Center" Margin="135,10" />
 
-    </Grid>
+                            <!-- Next button -->
+
+                        </StackPanel>
+
+                    </Border>
+
+                    <Button Style="{StaticResource TextButton}" Content="I already have an account" HorizontalAlignment="Center" />
+
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </Border>
 </Window>
