@@ -45,12 +45,12 @@ namespace Pizzaria1
         {
             RegistrationWindow registrationWindow = new RegistrationWindow();
             registrationWindow.Show();
+            this.Close();
 
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-
             if (tb_Email.Text != "" && tb_Password.Text != "")
             {
                 UserServiceRef.UserServiceClient client = new UserServiceRef.UserServiceClient();
@@ -62,17 +62,20 @@ namespace Pizzaria1
                 {
                     System.Windows.Forms.MessageBox.Show(ex.Message);
                 }
-              
+
                 //User user = cUser.(tb_Email.Text , tb_Password.Text);
                 //if(user!=null)
                 //{
                 //    this.Hide();
                 //    MainWindow mainWindow = new MainWindow();
                 //    this.Close();
-                    
+
                 //}
             }
             //cUser.Login(tb_Email.Text, tb_Password.Text);
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
         }
     }
 }
