@@ -38,9 +38,6 @@
   <wsdl:message name="IUserService_Registrer_InputMessage">
     <wsdl:part name="parameters" element="tns:Registrer" />
   </wsdl:message>
-  <wsdl:message name="IUserService_Login_InputMessage">
-    <wsdl:part name="parameters" element="tns:Login" />
-  </wsdl:message>
   <wsdl:message name="IUserService_AddOrder_InputMessage">
     <wsdl:part name="parameters" element="tns:AddOrder" />
   </wsdl:message>
@@ -50,9 +47,6 @@
   <wsdl:portType name="IUserService">
     <wsdl:operation name="Registrer">
       <wsdl:input wsaw:Action="http://tempuri.org/IUserService/Registrer" message="tns:IUserService_Registrer_InputMessage" />
-    </wsdl:operation>
-    <wsdl:operation name="Login">
-      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/Login" message="tns:IUserService_Login_InputMessage" />
     </wsdl:operation>
     <wsdl:operation name="AddOrder">
       <wsdl:input wsaw:Action="http://tempuri.org/IUserService/AddOrder" message="tns:IUserService_AddOrder_InputMessage" />
@@ -64,12 +58,6 @@
     <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
     <wsdl:operation name="Registrer">
       <soap12:operation soapAction="http://tempuri.org/IUserService/Registrer" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-    </wsdl:operation>
-    <wsdl:operation name="Login">
-      <soap12:operation soapAction="http://tempuri.org/IUserService/Login" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>

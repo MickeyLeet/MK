@@ -16,8 +16,8 @@ namespace PizzeriaService
     {
         [OperationContract(IsOneWay = true)]
         void Registrer(string Login, string Email, string Password, string RepeatPassword);
-        [OperationContract(IsOneWay = true)]
-        void Login(string Login, string Password);
+        //[OperationContract(IsOneWay = true)]
+        //void Login(string Login, string Password);
 
         [OperationContract]
         void AddOrder(string OrderComp, DateTime OrderDate, string OrderStatus);

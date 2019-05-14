@@ -135,31 +135,31 @@ namespace PizzeriaService
 
             //}
         }
-        void IUserService.Login(string Login, string Password)
-        {
-            if (Login.Length < 1)
-            {
-                throw new Exception("Введіть логін");
-            }
+        //void IUserService.Login(string Login, string Password)
+        //{
+        //    if (Login.Length < 1)
+        //    {
+        //        throw new Exception("Введіть логін");
+        //    }
 
-            if (Password.Length < 1)
-            {
-                throw new Exception("Введіть пароль");
-            }
+        //    if (Password.Length < 1)
+        //    {
+        //        throw new Exception("Введіть пароль");
+        //    }
 
-            string hashPassword = CHash.CreateMD5(Password);
+        //    string hashPassword = CHash.CreateMD5(Password);
 
 
-            User user = context.Users.FirstOrDefault((x) => x.Login == Login && x.Password == hashPassword);
-            if (user != null)
-            {
+        //    User user = context.Users.FirstOrDefault((x) => x.Login == Login && x.Password == hashPassword);
+        //    if (user != null)
+        //    {
                 
-            }
-            else
-            {
-                throw new Exception("Не правильно введений логін чи пароль");
-            }
-        }
+        //    }
+        //    else
+        //    {
+        //        throw new Exception("Не правильно введений логін чи пароль");
+        //    }
+        //}
 
     }
 

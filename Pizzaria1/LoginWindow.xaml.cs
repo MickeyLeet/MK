@@ -1,4 +1,6 @@
 ﻿using Pizzaria1.Classes;
+using PizzeriaDomen.Entities;
+using PizzeriaDomen.EntityFramework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +22,10 @@ namespace Pizzaria1
     /// </summary>
     public partial class LoginWindow : Window
     {
-        CUser cUser = null;
+        UserServiceRef.UserServiceClient cUser = new UserServiceRef.UserServiceClient();
+
+        EFContext context = new EFContext();
+
         public LoginWindow()
         {
             InitializeComponent();
@@ -45,7 +50,19 @@ namespace Pizzaria1
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            cUser.Client.Login(tb_Email.Text, tb_Password.Text);
+
+            if (tb_Email.Text != "" && tb_Password.Text != "")
+            {
+                User user = cUser(tb_Email.Text , tb_Password.Text);
+                if(user!=null)
+                {
+                    this.Hide();
+                    MainWindow mainWindow = new MainWindow();
+                    this.Close();
+                    
+                }
+            }
+            //cUser.Login(tb_Email.Text, tb_Password.Text);
         }
     }
 }
