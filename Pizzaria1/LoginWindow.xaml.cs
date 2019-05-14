@@ -57,6 +57,9 @@ namespace Pizzaria1
                 try
                 {
                     bool isAdmin = client.Login(tb_Email.Text, tb_Password.Text);
+                    MainWindow mainWindow = new MainWindow();
+                    mainWindow.Show();
+                    this.Close();
                 }
                 catch (Exception ex)
                 {
@@ -73,9 +76,7 @@ namespace Pizzaria1
                 //}
             }
             //cUser.Login(tb_Email.Text, tb_Password.Text);
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();
-            this.Close();
+            
         }
     }
 }
