@@ -40,12 +40,16 @@ namespace Pizzaria1
         {
             RegistrationWindow registrationWindow = new RegistrationWindow();
             registrationWindow.Show();
+            this.Close();
 
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             cUser.Client.Login(tb_Email.Text, tb_Password.Text);
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
         }
     }
 }

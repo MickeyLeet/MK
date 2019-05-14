@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Pizzaria1"
         mc:Ignorable="d" 
         Height="650" Width="600"
-        Title="LoginWindow">
+        Title="LoginWindow"  WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Border Background="{StaticResource WordBlueBrush}">
         <Grid>
             <Grid.Background>

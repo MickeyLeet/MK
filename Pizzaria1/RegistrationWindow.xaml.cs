@@ -46,12 +46,16 @@ namespace Pizzaria1
         private void Button_Next(object sender, RoutedEventArgs e)
         {
             cUser.Registrer(tb_Login.Text, tb_Email.Text, tb_Password.Text, tb_RepeatPass.Text);
+            LoginWindow loginWindow = new LoginWindow();
+            this.Close();
+            loginWindow.Show();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             LoginWindow loginWindow = new LoginWindow();
             loginWindow.Show();
+            this.Close();
         }
     }
 }
