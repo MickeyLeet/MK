@@ -139,20 +139,19 @@ namespace PizzeriaService
         }
         public bool Login(string Login, string Password)
         {
-            if (Login.Length < 1)
+            if (string.IsNullOrEmpty(Login))
             {
                 throw new Exception("Введіть логін");
             }
 
-            if (Password.Length < 1)
+            if (string.IsNullOrEmpty(Password))
             {
                 throw new Exception("Введіть пароль");
             }
 
-            string hashPassword = CHash.CreateMD5(Password);
 
 
-            User user = context.Users.FirstOrDefault(x => x.Login == Login && x.Password == hashPassword);
+            User user = context.Users.FirstOrDefault(x => x.Login == Login && x.Password == Password);
             if (user != null)
             {
                 if (user.RoleID == context.Roles.FirstOrDefault(t => t.Name == "Admin").ID)

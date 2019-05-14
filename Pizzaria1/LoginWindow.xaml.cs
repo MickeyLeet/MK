@@ -22,7 +22,6 @@ namespace Pizzaria1
     /// </summary>
     public partial class LoginWindow : Window
     {
-        UserServiceRef.UserServiceClient cUser = new UserServiceRef.UserServiceClient();
 
         EFContext context = new EFContext();
 
@@ -38,7 +37,7 @@ namespace Pizzaria1
 
         private void Register_Btn_Click(object sender, RoutedEventArgs e)
         {
-           
+
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -51,32 +50,34 @@ namespace Pizzaria1
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            if (tb_Email.Text != "" && tb_Password.Text != "")
+
+            UserServiceRef.UserServiceClient client = new UserServiceRef.UserServiceClient();
+            try
             {
-                UserServiceRef.UserServiceClient client = new UserServiceRef.UserServiceClient();
-                try
-                {
-                    bool isAdmin = client.Login(tb_Email.Text, tb_Password.Text);
-                    MainWindow mainWindow = new MainWindow();
-                    mainWindow.Show();
-                    this.Close();
-                }
-                catch (Exception ex)
-                {
-                    System.Windows.Forms.MessageBox.Show(ex.Message);
-                }
+                bool isAdmin = client.Login(tb_Login.Text, tb_Password.Text);
 
-                //User user = cUser.(tb_Email.Text , tb_Password.Text);
-                //if(user!=null)
-                //{
-                //    this.Hide();
-                //    MainWindow mainWindow = new MainWindow();
-                //    this.Close();
+                MainWindow mainWindow = new MainWindow();
+                this.Close();
+                mainWindow.Show();
 
-                //}
+
             }
+            catch (Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+            //User user = cUser.(tb_Email.Text , tb_Password.Text);
+            //if(user!=null)
+            //{
+            //    this.Hide();
+            //    MainWindow mainWindow = new MainWindow();
+            //    this.Close();
+
+            //}
+
             //cUser.Login(tb_Email.Text, tb_Password.Text);
-            
+
         }
     }
 }
