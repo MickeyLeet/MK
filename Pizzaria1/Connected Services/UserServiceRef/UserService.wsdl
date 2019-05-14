@@ -90,7 +90,7 @@
       <wsa10:EndpointReference>
         <wsa10:Address>net.tcp://localhost:8098/bind</wsa10:Address>
         <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
-          <Upn>Idea\Idea</Upn>
+          <Upn>MK\MK</Upn>
         </Identity>
       </wsa10:EndpointReference>
     </wsdl:port>

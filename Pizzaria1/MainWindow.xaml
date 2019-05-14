@@ -37,7 +37,7 @@
             <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.2}">
                 <Grid x:Name="GridCursor" Margin="0 100 0 0" Background="#FF0069C0" Width="10" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top"/>
             </materialDesign:TransitioningContent>
-            <ListView x:Name="ListViewMenu" Margin="0,100,0,197" Foreground="LightGray" FontFamily="Champagne &amp; Limousines" FontSize="18" SelectionChanged="ListViewMenu_SelectionChanged" SelectedIndex="0">
+            <ListView Background="Transparent" x:Name="ListViewMenu" Margin="0,100,0,197" Foreground="LightGray" FontFamily="Champagne &amp; Limousines" FontSize="18" SelectionChanged="ListViewMenu_SelectionChanged" SelectedIndex="0">
                 <ListViewItem Height="60">
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="Home" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
@@ -78,7 +78,7 @@
 
 
 
-            <ListView  x:Name="ListViewLogin" Margin="0,550,0,0" Foreground="#FF0069C0" FontFamily="Champagne &amp; Limousines" FontSize="18" SelectionChanged="ListViewLogin_SelectionChanged" SelectedIndex="0" Background="LightGray">
+            <ListView   x:Name="ListViewLogin" Margin="0,550,0,0" Foreground="#FF0069C0" FontFamily="Champagne &amp; Limousines" FontSize="18" SelectionChanged="ListViewLogin_SelectionChanged" SelectedIndex="0" Background="Transparent">
                 <ListViewItem Height="50">
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="Login" Width="30" Height="30" VerticalAlignment="Center" Foreground="#FFD3D3D3" Margin="5"/>

@@ -19,39 +19,15 @@
             <Label Name="LCart"  Content="Added in cart" Foreground="Red" BorderBrush="Black" Background="WhiteSmoke" FontSize="18" Opacity="0" Margin="624,499,24,27.8"/>
             <materialDesign:PackIcon Name="PCart" Kind="Cart" Foreground="Red" Width="30" Height="30" VerticalAlignment="Center" Opacity="0" Margin="746,499,0,27.8"/>
 
-            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="112,0,0,0"  >
-                <ListViewItem Height="60" Margin="0,0,0,0" HorizontalAlignment="Left" Width="130">
-                    <Button Name="Pizza_Button" Click="Pizza_Btn_Click" Height="60" Width="130" HorizontalAlignment="Center" VerticalAlignment="Center">
-                        <StackPanel Orientation="Horizontal" Background="#FF2196F3">
-                            <materialDesign:PackIcon Kind="Pizza" Width="30" Height="30" VerticalAlignment="Center" Foreground="White" Margin="5"/>
-                            <TextBlock Text="Pizza" FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="-4,2,0,2" Foreground="#FF7FFFA1"/>
-                        </StackPanel>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="60,0,0,0" Width="675"   >
+                    <Button Content="Pizza" FontSize="18" Margin='0,0,10,0' Name="Pizza_Button" Click="Pizza_Btn_Click" Height="50" Width="160" HorizontalAlignment="Center" VerticalAlignment="Center">
                     </Button>
-                </ListViewItem>
-                <ListViewItem Height="60" HorizontalAlignment="Left" Width="135">
-                    <Button Name="Burger_Button" Click="Burger_Btn_Click" Height="60" Width="130" HorizontalAlignment="Center" VerticalAlignment="Center">
-                        <StackPanel Orientation="Horizontal" Background="#FF2196F3">
-                            <materialDesign:PackIcon Kind="Food" Width="35" Height="30" Foreground="White" VerticalAlignment="Center" Margin="5,5,15,5"/>
-                            <TextBlock Text="Burgers" FontSize="17" VerticalAlignment="Center" Foreground="#FF7FFFA1" Margin="-17,5,8,5" />
-                        </StackPanel>
+                <Button Content="Burgers" FontSize="18" Margin='0,0,10,0' Name="Burger_Button" Click="Burger_Btn_Click" Height="50" Width="160" HorizontalAlignment="Center" VerticalAlignment="Center">
                     </Button>
-                </ListViewItem>
-                <ListViewItem Height="60" HorizontalAlignment="Left" Width="135">
-                    <Button Name="Drinks_Button" Click="Drinks_Btn_Click" Height="60" Width="130" HorizontalAlignment="Center" VerticalAlignment="Center">
-                        <StackPanel Orientation="Horizontal" Background="#FF2196F3">
-                            <materialDesign:PackIcon Kind="FoodForkDrink" Width="30" Height="30" Foreground="White" VerticalAlignment="Center" Margin="5"/>
-                            <TextBlock Text="Drinks" FontSize="17" VerticalAlignment="Center" Foreground="#FF7FFFA1" Margin="-5,5,0,2"/>
-                        </StackPanel>
+                <Button Content="Drinks" FontSize="18" Margin='0,0,10,0' Name="Drinks_Button" Click="Drinks_Btn_Click" Height="50" Width="160" HorizontalAlignment="Center" VerticalAlignment="Center">
                     </Button>
-                </ListViewItem>
-                <ListViewItem Height="60" Width="135" HorizontalAlignment="Left">
-                    <Button Name="Other_Button" Click="Other_Btn_Click" Height="60" Width="130" HorizontalAlignment="Center" VerticalAlignment="Center">
-                        <StackPanel Orientation="Horizontal" Background="#FF2196F3">
-                            <materialDesign:PackIcon Kind="FoodApple" Width="30" Height="30" Foreground="White" VerticalAlignment="Center" Margin="5"/>
-                            <TextBlock Text="Other" FontSize="17" VerticalAlignment="Center" Foreground="#FF7FFFA1" Margin="-5,5,0,2"/>
-                        </StackPanel>
+                    <Button Content="Other" FontSize="18" Name="Other_Button" Click="Other_Btn_Click" Height="50" Width="160" HorizontalAlignment="Center" VerticalAlignment="Center">
                     </Button>
-                </ListViewItem>
             </StackPanel>
 
 
@@ -103,10 +79,10 @@
                     <DockPanel LastChildFill="True" Height="174" Margin="0,20,0,0" HorizontalAlignment="Center">
 
 
-                        <Button Name="FirstAdd_Button" Background="#FF2196F3" Width="150" Margin="15,111,10,30.6" HorizontalAlignment="Left" VerticalAlignment="Center" Content="In cart" Click="FirstAdd_Button_Click"/>
-                        <Button Name="SecondAdd_Button" Background="#FF2196F3" Width="150" Margin="25,111,10,30.6" HorizontalAlignment="Left" VerticalAlignment="Center" Content="In cart" Click="SecondAdd_Button_Click"/>
-                        <Button Name="ThirdAdd_Button" Background="#FF2196F3" Width="150" Margin="25,111,10,30.6" HorizontalAlignment="Left" VerticalAlignment="Center" Content="In cart" Click="ThirdAdd_Button_Click"/>
-                        <Button Name="FourtyAdd_Button" Background="#FF2196F3" Width="150" Margin="25,111,15,30.6" HorizontalAlignment="Left"  VerticalAlignment="Center" Content="In cart" Click="FourtyAdd_Button_Click"/>
+                        <Button FontSize="18" Name="FirstAdd_Button" Background="#FF2196F3" Width="150" Margin="15,111,10,30.6" HorizontalAlignment="Left" VerticalAlignment="Center" Content="In cart" Click="FirstAdd_Button_Click"/>
+                        <Button FontSize="18" Name="SecondAdd_Button" Background="#FF2196F3" Width="150" Margin="25,111,10,30.6" HorizontalAlignment="Left" VerticalAlignment="Center" Content="In cart" Click="SecondAdd_Button_Click"/>
+                        <Button FontSize="18" Name="ThirdAdd_Button" Background="#FF2196F3" Width="150" Margin="25,111,10,30.6" HorizontalAlignment="Left" VerticalAlignment="Center" Content="In cart" Click="ThirdAdd_Button_Click"/>
+                        <Button FontSize="18" Name="FourtyAdd_Button" Background="#FF2196F3" Width="150" Margin="25,111,15,30.6" HorizontalAlignment="Left"  VerticalAlignment="Center" Content="In cart" Click="FourtyAdd_Button_Click"/>
 
                     </DockPanel>
                     <!--==================================================-->
@@ -115,10 +91,10 @@
                     <DockPanel LastChildFill="True" Height="174" Margin="0,20,0,0" HorizontalAlignment="Center">
 
 
-                        <Button Name="FifthAdd_Button" Background="#FF2196F3" Width="150" Margin="15,111,10,30.6" HorizontalAlignment="Left" VerticalAlignment="Center" Content="In cart" Click="FifthAdd_Button_Click"/>
-                        <Button Name="SixthAdd_Button" Background="#FF2196F3" Width="150" Margin="25,111,10,30.6" HorizontalAlignment="Left" VerticalAlignment="Center" Content="In cart" Click="SixthAdd_Button_Click"/>
-                        <Button Name="SeventhAdd_Button" Background="#FF2196F3" Width="150" Margin="25,111,10,30.6" HorizontalAlignment="Left" VerticalAlignment="Center" Content="In cart" Click="SeventhAdd_Button_Click"/>
-                        <Button Name="eighthAdd_Button" Background="#FF2196F3" Width="150" Margin="25,111,15,30.6" HorizontalAlignment="Left"  VerticalAlignment="Center" Content="In cart" Click="EighthAdd_Button_Click"/>
+                        <Button FontSize="18" Name="FifthAdd_Button" Background="#FF2196F3" Width="150" Margin="15,111,10,30.6" HorizontalAlignment="Left" VerticalAlignment="Center" Content="In cart" Click="FifthAdd_Button_Click"/>
+                        <Button FontSize="18" Name="SixthAdd_Button" Background="#FF2196F3" Width="150" Margin="25,111,10,30.6" HorizontalAlignment="Left" VerticalAlignment="Center" Content="In cart" Click="SixthAdd_Button_Click"/>
+                        <Button FontSize="18" Name="SeventhAdd_Button" Background="#FF2196F3" Width="150" Margin="25,111,10,30.6" HorizontalAlignment="Left" VerticalAlignment="Center" Content="In cart" Click="SeventhAdd_Button_Click"/>
+                        <Button FontSize="18" Name="eighthAdd_Button" Background="#FF2196F3" Width="150" Margin="25,111,15,30.6" HorizontalAlignment="Left"  VerticalAlignment="Center" Content="In cart" Click="EighthAdd_Button_Click"/>
 
 
                         <!--<Image Margin="10" Width="200" Height="200" Source="Assets/09-calabrese-tradizionale.jpg" Stretch="UniformToFill"/>-->

@@ -56,10 +56,6 @@ namespace PizzeriaService
 
     public class UserService : IUserService
     {
-        ICallBack callBack
-        {
-            get => OperationContext.Current.GetCallbackChannel<ICallBack>();
-        }
 
         EFContext context = new EFContext();
 
@@ -105,30 +101,28 @@ namespace PizzeriaService
         //}
 
 
-        void IUserService.Registrer(string Login, string Email, string Password, string RepeatPassword)
+        public void Registrer(string Login, string Email, string Password, string RepeatPassword)
         {
             if (Login.Length < 1)
             {
-                callBack.Error("Введіть логін");
-                return;
+                throw new Exception("Введіть логін");
+                //callBack.Error();
+                //return;
             }
 
             if (Email.Length < 1)
             {
-                callBack.Error("Введіть пошту");
-                return;
+                throw new Exception("Введіть пошту");
             }
 
             if (context.Users.FirstOrDefault((x) => x.Email == Email) != null)
             {
-                callBack.Error("Користувач з такою поштою вже зареєстрований");
-                return;
+                throw new Exception("Користувач з такою поштою вже зареєстрований");
             }
 
             if (RepeatPassword != Password)
             {
-                callBack.Error("Паролі не збігаються");
-                return;
+                throw new Exception("Паролі не збігаються");
             }
 
             string hashPassword = CHash.CreateMD5(Password);
@@ -145,27 +139,25 @@ namespace PizzeriaService
         {
             if (Login.Length < 1)
             {
-                callBack.Error("Введіть логін");
-                return;
+                throw new Exception("Введіть логін");
             }
 
             if (Password.Length < 1)
             {
-                callBack.Error("Введіть пароль");
-                return;
+                throw new Exception("Введіть пароль");
             }
 
             string hashPassword = CHash.CreateMD5(Password);
 
 
             User user = context.Users.FirstOrDefault((x) => x.Login == Login && x.Password == hashPassword);
-            if (user != null) 
+            if (user != null)
             {
                 
             }
             else
             {
-                callBack.Error("Не правильно введений логін чи пароль");
+                throw new Exception("Не правильно введений логін чи пароль");
             }
         }
 
