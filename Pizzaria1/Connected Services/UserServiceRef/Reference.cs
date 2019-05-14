@@ -21,6 +21,12 @@ namespace Pizzaria1.UserServiceRef {
         [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IUserService/Registrer")]
         System.Threading.Tasks.Task RegistrerAsync(string Login, string Email, string Password, string RepeatPassword);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/Login", ReplyAction="http://tempuri.org/IUserService/LoginResponse")]
+        bool Login([System.ServiceModel.MessageParameterAttribute(Name="Login")] string Login1, string Password);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/Login", ReplyAction="http://tempuri.org/IUserService/LoginResponse")]
+        System.Threading.Tasks.Task<bool> LoginAsync(string Login, string Password);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/AddOrder", ReplyAction="http://tempuri.org/IUserService/AddOrderResponse")]
         void AddOrder(string OrderComp, System.DateTime OrderDate, string OrderStatus);
         
@@ -61,6 +67,14 @@ namespace Pizzaria1.UserServiceRef {
         
         public System.Threading.Tasks.Task RegistrerAsync(string Login, string Email, string Password, string RepeatPassword) {
             return base.Channel.RegistrerAsync(Login, Email, Password, RepeatPassword);
+        }
+        
+        public bool Login(string Login1, string Password) {
+            return base.Channel.Login(Login1, Password);
+        }
+        
+        public System.Threading.Tasks.Task<bool> LoginAsync(string Login, string Password) {
+            return base.Channel.LoginAsync(Login, Password);
         }
         
         public void AddOrder(string OrderComp, System.DateTime OrderDate, string OrderStatus) {

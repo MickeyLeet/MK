@@ -53,14 +53,24 @@ namespace Pizzaria1
 
             if (tb_Email.Text != "" && tb_Password.Text != "")
             {
-                User user = cUser(tb_Email.Text , tb_Password.Text);
-                if(user!=null)
+                UserServiceRef.UserServiceClient client = new UserServiceRef.UserServiceClient();
+                try
                 {
-                    this.Hide();
-                    MainWindow mainWindow = new MainWindow();
-                    this.Close();
-                    
+                    bool isAdmin = client.Login(tb_Email.Text, tb_Password.Text);
                 }
+                catch (Exception ex)
+                {
+                    System.Windows.Forms.MessageBox.Show(ex.Message);
+                }
+              
+                //User user = cUser.(tb_Email.Text , tb_Password.Text);
+                //if(user!=null)
+                //{
+                //    this.Hide();
+                //    MainWindow mainWindow = new MainWindow();
+                //    this.Close();
+                    
+                //}
             }
             //cUser.Login(tb_Email.Text, tb_Password.Text);
         }
