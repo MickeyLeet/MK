@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzeriaDomen", "PizzeriaDo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzeriaService", "PizzeriaService\PizzeriaService.csproj", "{18288FE2-6128-44C8-A405-6976DBA2D564}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Host", "Host\Host.csproj", "{9410F7DA-45C7-40E4-BB10-5EC94DF5F99C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{18288FE2-6128-44C8-A405-6976DBA2D564}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18288FE2-6128-44C8-A405-6976DBA2D564}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18288FE2-6128-44C8-A405-6976DBA2D564}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9410F7DA-45C7-40E4-BB10-5EC94DF5F99C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9410F7DA-45C7-40E4-BB10-5EC94DF5F99C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9410F7DA-45C7-40E4-BB10-5EC94DF5F99C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9410F7DA-45C7-40E4-BB10-5EC94DF5F99C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -44,13 +44,13 @@
                                        />
 
                             <!-- Email -->
-                            <TextBox Tag="Email" />
+                            <TextBox Name="tb_Email" Tag="Email" />
 
                             <!-- Password -->
-                            <TextBox Tag="Password" Margin="0 0 0 30" />
+                            <TextBox Name="tb_Password" Tag="Password" Margin="0 0 0 30" />
 
                             <!-- Next button -->
-                            <Button Content="Next" HorizontalAlignment="Center" />
+                            <Button Content="Next" HorizontalAlignment="Center" Click="Button_Click_2" />
 
                         </StackPanel>
 

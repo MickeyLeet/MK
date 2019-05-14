@@ -45,14 +45,14 @@
                                        />
 
                             <!-- Email -->
-                            <TextBox Tag="Login" />
+                            <TextBox Name="tb_Login" Tag="Login" />
 
                             <!-- Password -->
-                            <TextBox Tag="Email"/>
+                            <TextBox Name="tb_Email" Tag="Email"/>
 
-                            <TextBox Tag="Password" Margin="0 0 0 30" />
-                            <TextBox Tag="Repeat Password" Margin=" 0 -15 0 0"></TextBox>
-                            <Button Content="Next" HorizontalAlignment="Center" Margin="135,10" />
+                            <TextBox Name="tb_Password" Tag="Password" Margin="0 0 0 30" />
+                            <TextBox Name="tb_RepeatPass" Tag="Repeat Password" Margin=" 0 -15 0 0"></TextBox>
+                            <Button Content="Next" HorizontalAlignment="Center" Margin="135,10" Click="Button_Next" />
 
                             <!-- Next button -->
 
@@ -60,7 +60,7 @@
 
                     </Border>
 
-                    <Button Style="{StaticResource TextButton}" Content="I already have an account" HorizontalAlignment="Center" />
+                    <Button Style="{StaticResource TextButton}" Content="I already have an account" HorizontalAlignment="Center" Click="Button_Click" />
 
                 </StackPanel>
             </ScrollViewer>

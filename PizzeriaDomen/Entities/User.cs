@@ -14,14 +14,17 @@ namespace PizzeriaDomen.Entities
         public int ID { get; set; }
         [Required, StringLength(40)]
         public string Login { get; set; }
+      
         [Required, StringLength(500)]
         public string Password { get; set; }
 
-        [Required, StringLength(500)]
-        public string Name { get; set; }
-
         [Required, StringLength(200)]
         public string Email { get; set; }
+
+        //[Required, StringLength(500)]
+        //public string Name { get; set; }
+
+
 
         //[Required, ForeignKey("Order")]
         //public int OrderID { get; set; }

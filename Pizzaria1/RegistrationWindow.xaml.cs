@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Pizzaria1.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,8 +20,10 @@ namespace Pizzaria1
     /// </summary>
     public partial class RegistrationWindow : Window
     {
+        CUser cUser = null;
         public RegistrationWindow()
         {
+           
             InitializeComponent();
         }
 
@@ -38,6 +41,17 @@ namespace Pizzaria1
             //}
             //else
             //    MessageBox.Show("Input All Lines");
+        }
+
+        private void Button_Next(object sender, RoutedEventArgs e)
+        {
+            cUser.Client.Registrer(tb_Login.Text, tb_Email.Text, tb_Password.Text, tb_RepeatPass.Text);
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            LoginWindow loginWindow = new LoginWindow();
+            loginWindow.Show();
         }
     }
 }
