@@ -8,19 +8,18 @@ using System.Threading.Tasks;
 
 namespace PizzeriaDomen.Entities
 {
-    public class Order
-    {
 
+    [Table("tbl_Products")]
+    public class Product
+    {
         [Key]
         public int Id { get; set; }
         [Required]
-        public DateTime OrderDate { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
         [Required]
-        public string OrderStatus { get; set; }
-
-        [ForeignKey("UserOf")]
-        public int UserId { get; set; }
-
-        public virtual User UserOf { get; set; }
+        public string Image { get; set; }
+        [Required]
+        public float Price { get; set; }
     }
 }

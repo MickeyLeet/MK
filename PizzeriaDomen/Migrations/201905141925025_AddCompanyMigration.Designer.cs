@@ -7,13 +7,13 @@ namespace PizzeriaDomen.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class Createusertable : IMigrationMetadata
+    public sealed partial class AddCompanyMigration : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Createusertable));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AddCompanyMigration));
         
         string IMigrationMetadata.Id
         {
-            get { return "201905091312488_Create user-table"; }
+            get { return "201905141925025_AddCompanyMigration"; }
         }
         
         string IMigrationMetadata.Source

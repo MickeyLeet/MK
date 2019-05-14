@@ -52,31 +52,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Order.cs" />
+    <Compile Include="Entities\Product.cs" />
     <Compile Include="Entities\Role.cs" />
     <Compile Include="Entities\User.cs" />
+    <Compile Include="Entities\UserOrder.cs" />
     <Compile Include="EntityFramework\EFContext.cs" />
-    <Compile Include="Migrations\201905091312488_Create user-table.cs" />
-    <Compile Include="Migrations\201905091312488_Create user-table.Designer.cs">
-      <DependentUpon>201905091312488_Create user-table.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201905141038523_AddRegister.cs" />
-    <Compile Include="Migrations\201905141038523_AddRegister.Designer.cs">
-      <DependentUpon>201905141038523_AddRegister.cs</DependentUpon>
+    <Compile Include="Migrations\201905141925025_AddCompanyMigration.cs" />
+    <Compile Include="Migrations\201905141925025_AddCompanyMigration.Designer.cs">
+      <DependentUpon>201905141925025_AddCompanyMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201905091312488_Create user-table.resx">
-      <DependentUpon>201905091312488_Create user-table.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201905141038523_AddRegister.resx">
-      <DependentUpon>201905141038523_AddRegister.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201905141925025_AddCompanyMigration.resx">
+      <DependentUpon>201905141925025_AddCompanyMigration.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

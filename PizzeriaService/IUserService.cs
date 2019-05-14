@@ -17,7 +17,7 @@ namespace PizzeriaService
     [ServiceContract]
     public interface IUserService
     {
-        [OperationContract(IsOneWay = true)]
+        [OperationContract]
         void Registrer(string Login, string Email, string Password, string RepeatPassword);
         [OperationContract]
         bool Login(string Login, string Password);

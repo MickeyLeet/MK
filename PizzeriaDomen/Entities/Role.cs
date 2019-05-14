@@ -14,5 +14,7 @@ namespace PizzeriaDomen.Entities
 
         [Required]
         public string Name { get; set; }
+
+        public virtual ICollection<User> Users { get; set; }
     }
 }

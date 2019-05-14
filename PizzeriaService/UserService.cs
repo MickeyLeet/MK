@@ -103,14 +103,14 @@ namespace PizzeriaService
 
         public void Registrer(string Login, string Email, string Password, string RepeatPassword)
         {
-            if (Login.Length < 1)
+            if (string.IsNullOrEmpty(Login))
             {
                 throw new Exception("Введіть логін");
                 //callBack.Error();
                 //return;
             }
 
-            if (Email.Length < 1)
+            if (string.IsNullOrEmpty(Email))
             {
                 throw new Exception("Введіть пошту");
             }
@@ -153,9 +153,14 @@ namespace PizzeriaService
             User user = context.Users.FirstOrDefault(x => x.Login == Login && x.Password == hashPassword);
             if (user != null)
             {
-
-                return true;
-
+                if (user.RoleID == context.Roles.FirstOrDefault(t => t.Name == "Admin").ID)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
             else
             {

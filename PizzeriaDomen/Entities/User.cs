@@ -18,7 +18,7 @@ namespace PizzeriaDomen.Entities
         [Required, StringLength(500)]
         public string Password { get; set; }
 
-        [Required, StringLength(200)]
+        [Required, StringLength(200),EmailAddress]
         public string Email { get; set; }
 
         //[Required, StringLength(500)]
@@ -29,9 +29,12 @@ namespace PizzeriaDomen.Entities
         //[Required, ForeignKey("Order")]
         //public int OrderID { get; set; }
 
-        //[Required, ForeignKey("Role")]
-        //public int RoleID { get; set; }
+        [Required, ForeignKey("RoleOf")]
+        public int RoleID { get; set; }
 
+        public virtual Role RoleOf { get; set; }
+
+        public virtual ICollection<Order> Orders { get; set; }
 
     }
 }
