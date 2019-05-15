@@ -19,7 +19,7 @@
             <Label Name="LCart"  Content="Added in cart" Foreground="Red" BorderBrush="Black" Background="WhiteSmoke" FontSize="18" Opacity="0" Margin="624,499,24,27.8"/>
             <materialDesign:PackIcon Name="PCart" Kind="Cart" Foreground="Red" Width="30" Height="30" VerticalAlignment="Center" Opacity="0" Margin="746,499,0,27.8"/>
 
-            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="60,0,0,0" Width="675"   >
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="60,20,0,0" Width="675"   >
                     <Button Content="Pizza" FontSize="18" Margin='0,0,10,0' Name="Pizza_Button" Click="Pizza_Btn_Click" Height="50" Width="160" HorizontalAlignment="Center" VerticalAlignment="Center">
                     </Button>
                 <Button Content="Burgers" FontSize="18" Margin='0,0,10,0' Name="Burger_Button" Click="Burger_Btn_Click" Height="50" Width="160" HorizontalAlignment="Center" VerticalAlignment="Center">
@@ -30,10 +30,47 @@
                     </Button>
             </StackPanel>
 
+            <Grid Margin="0,90,0,0">
 
-            <Grid Grid.RowSpan="2" >
+                <!--<ListView Background="Transparent">
+                    <ListViewItem HorizontalAlignment="Center">
+                    <DockPanel>
+                        <Rectangle Fill="Red" Height="150" Width="150" Margin="10"></Rectangle>
+                        <Rectangle Fill="Red" Height="150" Width="150" Margin="10"></Rectangle>
+                        <Rectangle Fill="Red" Height="150" Width="150" Margin="10"></Rectangle>
+                        <Rectangle Fill="Red" Height="150" Width="150" Margin="10"></Rectangle>
+                    </DockPanel>
+                    </ListViewItem>
 
-                <Image Name="FirstImage" Source="Images/chipolo.jpg" Width="120" Height="120" Margin="15,0,570,205"></Image>
+                    <ListViewItem HorizontalAlignment="Center">
+                        <DockPanel>
+                            <Rectangle Fill="Red" Height="150" Width="150" Margin="10"></Rectangle>
+                            <Rectangle Fill="Red" Height="150" Width="150" Margin="10"></Rectangle>
+                            <Rectangle Fill="Red" Height="150" Width="150" Margin="10"></Rectangle>
+                            <Rectangle Fill="Red" Height="150" Width="150" Margin="10"></Rectangle>
+                        </DockPanel>
+                    </ListViewItem>
+
+                </ListView>-->
+
+                <StackPanel Orientation="Horizontal">
+                    <StackPanel Orientation="Vertical">
+                        <Rectangle Width="150" Height="150" Margin="10" VerticalAlignment="Top" HorizontalAlignment="Left" Fill="Red"></Rectangle>
+                        <Rectangle Width="150" Height="150" Margin="10" VerticalAlignment="Top" HorizontalAlignment="Left" Fill="Red"></Rectangle>
+                        <Rectangle Width="150" Height="150" Margin="10" VerticalAlignment="Top" HorizontalAlignment="Left" Fill="Red"></Rectangle>
+                        <Rectangle Width="150" Height="150" Margin="10" VerticalAlignment="Top" HorizontalAlignment="Left" Fill="Red"></Rectangle>
+                    </StackPanel>
+
+                    
+                </StackPanel>
+                
+            </Grid>
+
+
+
+                <!--<Grid Grid.RowSpan="2" >-->
+
+                <!--<Image Name="FirstImage" Source="Images/chipolo.jpg" Width="120" Height="120" Margin="15,0,570,205"></Image>
                 <Image Name="SecondImage" Source="Images/dolche.jpg" Width="120" Height="120" Margin="229,101,421,305.8"></Image>
                 <Image Name="ThirdImage" Source="Images/emilia.jpg" Width="120" Height="120" Margin="414,102,236,304.8"></Image>
                 <Image Name="fourthImage" Source="Images/hawai.jpg" Width="120" Height="120" Margin="601,102,49,304.8"></Image>
@@ -72,9 +109,9 @@
 
 
                 <StackPanel Margin="0,121,0,48.8" >
-                    <!--==============-->
+                    --><!--==============-->
                     <!--==================================================-->
-                    <!--==================================================-->
+                    <!--==================================================--><!--
 
                     <DockPanel LastChildFill="True" Height="174" Margin="0,20,0,0" HorizontalAlignment="Center">
 
@@ -85,7 +122,7 @@
                         <Button FontSize="18" Name="FourtyAdd_Button" Background="#FF2196F3" Width="150" Margin="25,111,15,30.6" HorizontalAlignment="Left"  VerticalAlignment="Center" Content="In cart" Click="FourtyAdd_Button_Click"/>
 
                     </DockPanel>
-                    <!--==================================================-->
+                    --><!--==================================================--><!--
 
 
                     <DockPanel LastChildFill="True" Height="174" Margin="0,20,0,0" HorizontalAlignment="Center">
@@ -97,13 +134,13 @@
                         <Button FontSize="18" Name="eighthAdd_Button" Background="#FF2196F3" Width="150" Margin="25,111,15,30.6" HorizontalAlignment="Left"  VerticalAlignment="Center" Content="In cart" Click="EighthAdd_Button_Click"/>
 
 
-                        <!--<Image Margin="10" Width="200" Height="200" Source="Assets/09-calabrese-tradizionale.jpg" Stretch="UniformToFill"/>-->
+                        --><!--<Image Margin="10" Width="200" Height="200" Source="Assets/09-calabrese-tradizionale.jpg" Stretch="UniformToFill"/>--><!--
 
 
                     </DockPanel>
 
 
-                    <!--==================================================-->
+                    --><!--==================================================--><!--
 
 
 
@@ -111,7 +148,17 @@
                 </StackPanel>
 
 
-            </Grid>
+            </Grid>-->
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
 
 
 

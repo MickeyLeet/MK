@@ -17,19 +17,21 @@ using System.Windows.Shapes;
 namespace Pizzaria1
 {
     /// <summary>
-    /// Interaction logic for UserControlAllUser.xaml
+    /// Interaction logic for UserControlAllOrder.xaml
     /// </summary>
-    public partial class UserControlAllUser : UserControl
+    public partial class UserControlAllOrder : UserControl
     {
-        public UserControlAllUser()
+        public UserControlAllOrder()
         {
             InitializeComponent();
         }
 
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            EFContext context = new EFContext();
-            DataGrid1.ItemsSource = context.Users.ToList();
+            //var kk = db.Clients.ToList();
+            //var dd = db.Phones.ToList();
+            //personGrid.ItemsSource = kk;
+            //personGrid.ItemsSource = dd;
         }
     }
 }

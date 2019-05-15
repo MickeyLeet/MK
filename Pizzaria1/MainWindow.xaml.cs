@@ -52,6 +52,29 @@ namespace Pizzaria1
                     GridPrincipal.Children.Clear();
                     GridPrincipal.Children.Add(new UserControlCart());
                     break;
+                case 3:
+                    GridPrincipal.Children.Clear();
+                    GridPrincipal.Children.Add(new UserControlCart());
+                    break;
+                case 4:
+                    GridPrincipal.Children.Clear();
+                    GridPrincipal.Children.Add(new UserControlCart());
+                    break;
+                case 5:
+                    GridPrincipal.Children.Clear();
+                    GridPrincipal.Children.Add(new UserControlCart());
+                    break;
+                case 6:
+                    GridPrincipal.Children.Clear();
+                    GridPrincipal.Children.Add(new UserControlCart());
+                    break;
+                case 7:
+                    //GridPrincipal.Children.Clear();
+                    //GridPrincipal.Children.Add(new UserControlCart());
+                    LoginWindow loginWindow = new LoginWindow();
+                    loginWindow.Show();
+                    this.Close();
+                    break;
                 default:
                     break;
             }
@@ -69,20 +92,13 @@ namespace Pizzaria1
         }
 
         
-                    LoginWindow lg = new LoginWindow();
         private void ListViewLogin_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            int indexh = ListViewLogin.SelectedIndex;
-            MoveCursorMenu(indexh);
+        }
 
-            switch (indexh)
-            {
-                case 0:
-                    lg.Show();
-                    break;
-                default:
-                    break;
-            }
+        private void ListViewItem_Selected(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

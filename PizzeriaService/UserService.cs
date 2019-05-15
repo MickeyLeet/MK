@@ -125,11 +125,11 @@ namespace PizzeriaService
                 throw new Exception("Паролі не збігаються");
             }
 
-            string hashPassword = CHash.CreateMD5(Password);
+            //string hashPassword = CHash.CreateMD5(Password);
             int roleId = context.Roles.FirstOrDefault(t => t.Name == "User").ID;
 
 
-            context.Users.Add(new PizzeriaDomen.Entities.User { Login = Login, Password = hashPassword, Email = Email, RoleID = roleId });
+            context.Users.Add(new PizzeriaDomen.Entities.User { Login = Login, Password = Password, Email = Email, RoleID = roleId });
             context.SaveChanges();
 
             //public void UpdateUser(DataUser dataUser)

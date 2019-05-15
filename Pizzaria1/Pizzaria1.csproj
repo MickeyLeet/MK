@@ -87,6 +87,12 @@
     <Compile Include="RegistrationWindow.xaml.cs">
       <DependentUpon>RegistrationWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControlAllOrder.xaml.cs">
+      <DependentUpon>UserControlAllOrder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlAllProduct.xaml.cs">
+      <DependentUpon>UserControlAllProduct.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControlAllUser.xaml.cs">
       <DependentUpon>UserControlAllUser.xaml</DependentUpon>
     </Compile>
@@ -148,6 +154,14 @@
     <Page Include="Styles\Windows.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControlAllOrder.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlAllProduct.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControlAllUser.xaml">
       <SubType>Designer</SubType>

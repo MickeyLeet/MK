@@ -55,7 +55,7 @@
 
                     </Border>
 
-                    <Button Style="{StaticResource TextButton}" Content="Registration" HorizontalAlignment="Center" Click="Button_Click_1" />
+                    <Button Style="{StaticResource TextButton}" Foreground="Black" Content="Registration" HorizontalAlignment="Center" Click="Button_Click_1" />
 
                 </StackPanel>
             </ScrollViewer>

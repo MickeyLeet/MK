@@ -33,9 +33,9 @@ namespace Pizzaria1
             DragMove();
         }
 
-        private void ListViewMenu_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void ListViewMenu2_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            int index = ListViewMenu.SelectedIndex;
+            int index = ListViewMenu2.SelectedIndex;
             MoveCursorMenu(index);
 
             switch (index)
@@ -55,6 +55,25 @@ namespace Pizzaria1
                 case 3:
                     GridPrincipal.Children.Clear();
                     GridPrincipal.Children.Add(new UserControlAllUser());
+                    break;
+                case 4:
+                    GridPrincipal.Children.Clear();
+                    GridPrincipal.Children.Add(new UserControlAllUser());
+                    break;
+                case 5:
+                    GridPrincipal.Children.Clear();
+                    GridPrincipal.Children.Add(new UserControlAllUser());
+                    break;
+
+                case 6:
+                    GridPrincipal.Children.Clear();
+                    GridPrincipal.Children.Add(new UserControlAllUser());
+                    break;
+
+                case 7:
+                    LoginWindow loginWindow = new LoginWindow();
+                    loginWindow.Show();
+                    this.Close();
                     break;
                 default:
                     break;
@@ -76,17 +95,6 @@ namespace Pizzaria1
         LoginWindow lg = new LoginWindow();
         private void ListViewLogin_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            int indexh = ListViewLogin.SelectedIndex;
-            MoveCursorMenu(indexh);
-
-            switch (indexh)
-            {
-                case 0:
-                    lg.Show();
-                    break;
-                default:
-                    break;
-            }
         }
 
         private void ListViewItem_Selected(object sender, RoutedEventArgs e)

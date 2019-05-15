@@ -37,7 +37,7 @@
             <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.2}">
                 <Grid x:Name="GridCursor" Margin="0 100 0 0" Background="#FF0069C0" Width="10" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top"/>
             </materialDesign:TransitioningContent>
-            <ListView Background="Transparent" x:Name="ListViewMenu" Margin="0,100,0,65" Foreground="LightGray" FontFamily="Champagne &amp; Limousines" FontSize="18" SelectionChanged="ListViewMenu_SelectionChanged" SelectedIndex="0">
+            <ListView BorderBrush="Transparent" Background="Transparent" x:Name="ListViewMenu2" Margin="0,100,0,10" Foreground="LightGray" FontFamily="Champagne &amp; Limousines" FontSize="18" SelectionChanged="ListViewMenu2_SelectionChanged" SelectedIndex="0">
                 <ListViewItem Height="60" Selected="ListViewItem_Selected">
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="Home" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
@@ -56,12 +56,12 @@
                         <TextBlock Text="Cart" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem Height="60">
+                <!--<ListViewItem Height="60">
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="HumanGreeting" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
                         <TextBlock Text="Job" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
-                </ListViewItem>
+                </ListViewItem>-->
                 <ListViewItem Height="60" Selected="ListViewItem_Selected">
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="Account"  Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
@@ -74,37 +74,38 @@
                         <TextBlock Text="All Products" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
+
+
                 <ListViewItem Height="60">
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="BorderStyle" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
                         <TextBlock Text="All Orders" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
+                <ListViewItem Height="60">
+                </ListViewItem>
 
-
-
-
-
-
-
-
-
-
-
-
-            </ListView>
-
-
-
-            <ListView   x:Name="ListViewLogin" Margin="0,550,0,0" Foreground="#FF0069C0" FontFamily="Champagne &amp; Limousines" FontSize="18" SelectionChanged="ListViewLogin_SelectionChanged" SelectedIndex="0" Background="Transparent">
                 <ListViewItem Height="50">
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="Login" Width="30" Height="30" VerticalAlignment="Center" Foreground="#FFD3D3D3" Margin="5"/>
-                        <TextBlock Text="Log In" FontSize="17" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#FFD3D3D3" Margin="20 0"/>
+                        <TextBlock Text="Log out" FontSize="17" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#FFD3D3D3" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
 
+
+
+
+
+
+
+
+
+
+
             </ListView>
+
+
+
 
 
         </Grid>

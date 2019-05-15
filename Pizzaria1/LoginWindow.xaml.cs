@@ -55,13 +55,18 @@ namespace Pizzaria1
             try
             {
                 bool isAdmin = client.Login(tb_Login.Text, tb_Password.Text);
-
-                AdminWindow mainWindow = new AdminWindow();
+                if (isAdmin == true)
+                {
+                    AdminWindow adminWindow = new AdminWindow();
+                    this.Close();
+                    adminWindow.Show();
+                }
+                else
+                {
+                MainWindow mainWindow = new MainWindow();
                 this.Close();
                 mainWindow.Show();
-                //MainWindow mainWindow = new MainWindow();
-                //this.Close();
-                //mainWindow.Show();
+                }
 
 
             }
