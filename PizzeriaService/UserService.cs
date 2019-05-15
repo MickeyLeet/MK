@@ -66,6 +66,7 @@ namespace PizzeriaService
             throw new NotImplementedException();
         }
 
+
         //public void AddUser(DataUser dataUser)
         //{
         //Context context = new Context();
@@ -169,6 +170,12 @@ namespace PizzeriaService
             }
         }
 
+        
+        //public void ReturnProducts(string Name, float Price, string Description)
+        //{
+        //context.Products.FirstOrDefault(x => x.Name == Name && x.Description == Description && x.Price == Price);
+
+        //}
     }
 
 

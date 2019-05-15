@@ -60,7 +60,7 @@
 
                     </Border>
 
-                    <Button Style="{StaticResource TextButton}" Content="I already have an account" HorizontalAlignment="Center" Click="Button_Click" />
+                    <Button Foreground="Black" Style="{StaticResource TextButton}" Content="I already have an account" HorizontalAlignment="Center" Click="Button_Click" />
 
                 </StackPanel>
             </ScrollViewer>

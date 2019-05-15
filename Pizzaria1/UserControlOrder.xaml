@@ -19,149 +19,46 @@
             <Label Name="LCart"  Content="Added in cart" Foreground="Red" BorderBrush="Black" Background="WhiteSmoke" FontSize="18" Opacity="0" Margin="624,499,24,27.8"/>
             <materialDesign:PackIcon Name="PCart" Kind="Cart" Foreground="Red" Width="30" Height="30" VerticalAlignment="Center" Opacity="0" Margin="746,499,0,27.8"/>
 
-            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="60,20,0,0" Width="675"   >
-                    <Button Content="Pizza" FontSize="18" Margin='0,0,10,0' Name="Pizza_Button" Click="Pizza_Btn_Click" Height="50" Width="160" HorizontalAlignment="Center" VerticalAlignment="Center">
+            
+            
+            
+            <!--<StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="60,20,0,0" Width="675"   >
+                <Button Style="{StaticResource NextButton}" Content="Pizza" FontSize="18" Margin='0,0,10,0' Name="Pizza_Button" Click="Pizza_Btn_Click" Height="50" Width="160" HorizontalAlignment="Center" VerticalAlignment="Center">
                     </Button>
-                <Button Content="Burgers" FontSize="18" Margin='0,0,10,0' Name="Burger_Button" Click="Burger_Btn_Click" Height="50" Width="160" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Button Style="{StaticResource NextButton}" Content="Burgers" FontSize="18" Margin='0,0,10,0' Name="Burger_Button" Click="Burger_Btn_Click" Height="50" Width="160" HorizontalAlignment="Center" VerticalAlignment="Center">
                     </Button>
-                <Button Content="Drinks" FontSize="18" Margin='0,0,10,0' Name="Drinks_Button" Click="Drinks_Btn_Click" Height="50" Width="160" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Button Style="{StaticResource NextButton}" Content="Drinks" FontSize="18" Margin='0,0,10,0' Name="Drinks_Button" Click="Drinks_Btn_Click" Height="50" Width="160" HorizontalAlignment="Center" VerticalAlignment="Center">
                     </Button>
-                    <Button Content="Other" FontSize="18" Name="Other_Button" Click="Other_Btn_Click" Height="50" Width="160" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Button Style="{StaticResource NextButton}" Content="Other" FontSize="18" Name="Other_Button" Click="Other_Btn_Click" Height="50" Width="160" HorizontalAlignment="Center" VerticalAlignment="Center">
                     </Button>
-            </StackPanel>
+            </StackPanel>-->
 
             <Grid Margin="0,90,0,0">
 
-                <!--<ListView Background="Transparent">
-                    <ListViewItem HorizontalAlignment="Center">
-                    <DockPanel>
-                        <Rectangle Fill="Red" Height="150" Width="150" Margin="10"></Rectangle>
-                        <Rectangle Fill="Red" Height="150" Width="150" Margin="10"></Rectangle>
-                        <Rectangle Fill="Red" Height="150" Width="150" Margin="10"></Rectangle>
-                        <Rectangle Fill="Red" Height="150" Width="150" Margin="10"></Rectangle>
-                    </DockPanel>
-                    </ListViewItem>
+              
 
-                    <ListViewItem HorizontalAlignment="Center">
-                        <DockPanel>
-                            <Rectangle Fill="Red" Height="150" Width="150" Margin="10"></Rectangle>
-                            <Rectangle Fill="Red" Height="150" Width="150" Margin="10"></Rectangle>
-                            <Rectangle Fill="Red" Height="150" Width="150" Margin="10"></Rectangle>
-                            <Rectangle Fill="Red" Height="150" Width="150" Margin="10"></Rectangle>
-                        </DockPanel>
-                    </ListViewItem>
+                <ListView BorderBrush="Transparent" ItemsSource="{Binding TempClass}" Name="lvProducts">
+                    <ListView.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel Orientation="Horizontal" Width="750">
+                                
+                            </WrapPanel>
+                        </ItemsPanelTemplate>
+                    </ListView.ItemsPanel>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel  Width="170" Height="170">
+                                <TextBlock HorizontalAlignment="Center" Text="{Binding Path=Name}" ></TextBlock>
+                                <Image Height="90" Width="90" Source="{Binding Path=Picture}" ></Image>
+                                <TextBlock HorizontalAlignment="Center" Text="{Binding Path=Price}" ></TextBlock>
+                                <Button Height="40" Width="120" FontSize="12" Style="{StaticResource ResourceKey=NextButton}" HorizontalAlignment="Center" Margin="0,5,0,0" >Buy</Button>
 
-                </ListView>-->
-
-                <StackPanel Orientation="Horizontal">
-                    <StackPanel Orientation="Vertical">
-                        <Rectangle Width="150" Height="150" Margin="10" VerticalAlignment="Top" HorizontalAlignment="Left" Fill="Red"></Rectangle>
-                        <Rectangle Width="150" Height="150" Margin="10" VerticalAlignment="Top" HorizontalAlignment="Left" Fill="Red"></Rectangle>
-                        <Rectangle Width="150" Height="150" Margin="10" VerticalAlignment="Top" HorizontalAlignment="Left" Fill="Red"></Rectangle>
-                        <Rectangle Width="150" Height="150" Margin="10" VerticalAlignment="Top" HorizontalAlignment="Left" Fill="Red"></Rectangle>
-                    </StackPanel>
-
-                    
-                </StackPanel>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
                 
             </Grid>
-
-
-
-                <!--<Grid Grid.RowSpan="2" >-->
-
-                <!--<Image Name="FirstImage" Source="Images/chipolo.jpg" Width="120" Height="120" Margin="15,0,570,205"></Image>
-                <Image Name="SecondImage" Source="Images/dolche.jpg" Width="120" Height="120" Margin="229,101,421,305.8"></Image>
-                <Image Name="ThirdImage" Source="Images/emilia.jpg" Width="120" Height="120" Margin="414,102,236,304.8"></Image>
-                <Image Name="fourthImage" Source="Images/hawai.jpg" Width="120" Height="120" Margin="601,102,49,304.8"></Image>
-                <Image Name="fifthImage" Source="Images/julien.jpg" Width="120" Height="120" Margin="48,294,602,112.8"></Image>
-                <Image Name="sixthImage" Source="Images/Margarita.jpg" Width="120" Height="120" Margin="231,294,419,112.8"></Image>
-                <Image Name="seventhImage" Source="Images/munhaten.jpg" Width="120" Height="120" Margin="416,294,234,112.8"></Image>
-                <Image Name="eighthImage" Source="Images/peperoni.jpg" Width="120" Height="120" Margin="601,294,49,112.8"></Image>
-
-
-                <TextBlock Background="#FF2196F3" Width="120" Height="20" Margin="62,96,618,440.8" ></TextBlock>
-                <TextBlock Name="First_Textblock" Background="#FF2196F3" Width="120" Height="20" Margin="92,96,618,440.8" Text="Chipolo" ></TextBlock>
-
-                <TextBlock Background="#FF2196F3" Width="120" Height="20" Margin="244,96,436,440"></TextBlock>
-                <TextBlock Name="Second_Textblock" Background="#FF2196F3" Width="120" Height="20" Margin="274,96,436,440" Text="Dolche"></TextBlock>
-
-                <TextBlock Background="#FF2196F3" Width="120" Height="20" Margin="429,96,251,440.8"></TextBlock>
-                <TextBlock Name="Third_Textblock" Background="#FF2196F3" Width="120" Height="20" Margin="459,96,251,440.8" Text="Emilia"></TextBlock>
-
-                <TextBlock  Background="#FF2196F3" Width="120" Height="20" Margin="616,96,64,440.8"></TextBlock>
-                <TextBlock Name="fourty_Textblock" Background="#FF2196F3" Width="120" Height="20" Margin="646,96,64,440.8" Text="Hawai"></TextBlock>
-
-                <TextBlock Background="#FF2196F3" Width="120" Height="20" Margin="64,289,616,247.8"></TextBlock>
-                <TextBlock Name="fifth_Textblock" Background="#FF2196F3" Width="120" Height="20" Margin="99,289,616,247.8" Text="Julien">
-                </TextBlock>
-
-                <TextBlock Background="#FF2196F3" Width="120" Height="20" Margin="246,289,434,247.8"></TextBlock>
-                <TextBlock Name="sixth_Textblock" Background="#FF2196F3" Width="120" Height="20" Margin="266,289,434,247.8" Text="Margarita"></TextBlock>
-
-                <TextBlock Background="#FF2196F3" Width="120" Height="20" Margin="431,289,249,247.8"></TextBlock>
-                <TextBlock Name="seventh_Textblock"  Background="#FF2196F3" Width="120" Height="20" Margin="450,289,249,247.8" Text="Manhattan"></TextBlock>
-
-                <TextBlock Background="#FF2196F3" Width="120" Height="20" Margin="616,289,64,247.8"></TextBlock>
-                <TextBlock Name="eighth_Textblock" Background="#FF2196F3" Width="120" Height="20" Margin="636,289,64,247.8" Text="Peperoni"></TextBlock>
-
-
-
-
-                <StackPanel Margin="0,121,0,48.8" >
-                    --><!--==============-->
-                    <!--==================================================-->
-                    <!--==================================================--><!--
-
-                    <DockPanel LastChildFill="True" Height="174" Margin="0,20,0,0" HorizontalAlignment="Center">
-
-
-                        <Button FontSize="18" Name="FirstAdd_Button" Background="#FF2196F3" Width="150" Margin="15,111,10,30.6" HorizontalAlignment="Left" VerticalAlignment="Center" Content="In cart" Click="FirstAdd_Button_Click"/>
-                        <Button FontSize="18" Name="SecondAdd_Button" Background="#FF2196F3" Width="150" Margin="25,111,10,30.6" HorizontalAlignment="Left" VerticalAlignment="Center" Content="In cart" Click="SecondAdd_Button_Click"/>
-                        <Button FontSize="18" Name="ThirdAdd_Button" Background="#FF2196F3" Width="150" Margin="25,111,10,30.6" HorizontalAlignment="Left" VerticalAlignment="Center" Content="In cart" Click="ThirdAdd_Button_Click"/>
-                        <Button FontSize="18" Name="FourtyAdd_Button" Background="#FF2196F3" Width="150" Margin="25,111,15,30.6" HorizontalAlignment="Left"  VerticalAlignment="Center" Content="In cart" Click="FourtyAdd_Button_Click"/>
-
-                    </DockPanel>
-                    --><!--==================================================--><!--
-
-
-                    <DockPanel LastChildFill="True" Height="174" Margin="0,20,0,0" HorizontalAlignment="Center">
-
-
-                        <Button FontSize="18" Name="FifthAdd_Button" Background="#FF2196F3" Width="150" Margin="15,111,10,30.6" HorizontalAlignment="Left" VerticalAlignment="Center" Content="In cart" Click="FifthAdd_Button_Click"/>
-                        <Button FontSize="18" Name="SixthAdd_Button" Background="#FF2196F3" Width="150" Margin="25,111,10,30.6" HorizontalAlignment="Left" VerticalAlignment="Center" Content="In cart" Click="SixthAdd_Button_Click"/>
-                        <Button FontSize="18" Name="SeventhAdd_Button" Background="#FF2196F3" Width="150" Margin="25,111,10,30.6" HorizontalAlignment="Left" VerticalAlignment="Center" Content="In cart" Click="SeventhAdd_Button_Click"/>
-                        <Button FontSize="18" Name="eighthAdd_Button" Background="#FF2196F3" Width="150" Margin="25,111,15,30.6" HorizontalAlignment="Left"  VerticalAlignment="Center" Content="In cart" Click="EighthAdd_Button_Click"/>
-
-
-                        --><!--<Image Margin="10" Width="200" Height="200" Source="Assets/09-calabrese-tradizionale.jpg" Stretch="UniformToFill"/>--><!--
-
-
-                    </DockPanel>
-
-
-                    --><!--==================================================--><!--
-
-
-
-
-                </StackPanel>
-
-
-            </Grid>-->
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-
-
-
 
         </Grid>
     </materialDesign:TransitioningContent>

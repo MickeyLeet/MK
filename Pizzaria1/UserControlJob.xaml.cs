@@ -16,13 +16,24 @@ using System.Windows.Shapes;
 namespace Pizzaria1
 {
     /// <summary>
-    /// Interaction logic for UserControlRegistration.xaml
+    /// Interaction logic for UserControlJob.xaml
     /// </summary>
-    public partial class UserControlRegistration : UserControl
+    public partial class UserControlJob : UserControl
     {
-        public UserControlRegistration()
+        public UserControlJob()
         {
             InitializeComponent();
+        }
+
+        private void SendRequestJob_Btn_Click(object sender, RoutedEventArgs e)
+        {
+            if (txb_JobName != null && txb_JobSurName != null && txb_JobPhone != null)
+            {
+
+            }
+            else
+                MessageBox.Show("You must input all lines");
+
         }
     }
 }

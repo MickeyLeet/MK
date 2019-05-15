@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -16,13 +17,41 @@ using System.Windows.Shapes;
 
 namespace Pizzaria1
 {
+    public class TempClass
+    {
+        public string Name { get; set; }
+        public string Picture { get; set; }
+        public string Price { get; set; }
+    }
+
     public partial class UserControlDelivery : UserControl
     {
-
         //int page = 0;
         public UserControlDelivery()
         {
+
+
+
+
             InitializeComponent();
+            lvProducts.ItemsSource = new List<TempClass> { new TempClass { Name = "Manhattan", Picture= @"https://i.imgur.com/L1YrCVq.jpg", Price = "100"  }, new TempClass { Name = "Emilia", Picture = @"https://i.imgur.com/wwKUYkq.jpg", Price = "120" }, new TempClass { Name = "Proshuto", Picture = @"https://i.imgur.com/77lx25s.jpg", Price = "85" },
+                new TempClass { Name = "Vanila Shake", Picture = @"https://i.imgur.com/romxsCi.png", Price = "25" },
+                new TempClass { Name = "Chocolate shake", Picture = @"https://i.imgur.com/Mtfls7r.png", Price = "99" },
+                new TempClass { Name = "Hawai", Picture = @"https://i.imgur.com/Aasa90b.jpg", Price = "99" },
+                new TempClass { Name = "Hawai", Picture = @"https://i.imgur.com/Aasa90b.jpg", Price = "99" },
+                new TempClass { Name = "Hawai", Picture = @"https://i.imgur.com/Aasa90b.jpg", Price = "99" },
+                new TempClass { Name = "Hawai", Picture = @"https://i.imgur.com/Aasa90b.jpg", Price = "99" },
+                new TempClass { Name = "Hawai", Picture = @"https://i.imgur.com/Aasa90b.jpg", Price = "99" },
+                new TempClass { Name = "Hawai", Picture = @"https://i.imgur.com/Aasa90b.jpg", Price = "99" },
+                new TempClass { Name = "Hawai", Picture = @"https://i.imgur.com/Aasa90b.jpg", Price = "99" },
+                new TempClass { Name = "Hawai", Picture = @"https://i.imgur.com/Aasa90b.jpg", Price = "99" },
+
+
+
+
+
+
+            };
         }
         private void ListViewMenu_SelectionChanged(object sender, SelectionChangedEventArgs e
 )

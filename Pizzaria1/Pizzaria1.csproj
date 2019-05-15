@@ -99,17 +99,14 @@
     <Compile Include="UserControlCart.xaml.cs">
       <DependentUpon>UserControlCart.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControlJob.xaml.cs">
+      <DependentUpon>UserControlJob.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControlOrder.xaml.cs">
       <DependentUpon>UserControlOrder.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControlInicio.xaml.cs">
       <DependentUpon>UserControlInicio.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UserControlRegistration.xaml.cs">
-      <DependentUpon>UserControlRegistration.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UserControlSettings.xaml.cs">
-      <DependentUpon>UserControlSettings.xaml</DependentUpon>
     </Compile>
     <Page Include="AdminWindow.xaml">
       <SubType>Designer</SubType>
@@ -171,19 +168,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UserControlJob.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UserControlOrder.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControlInicio.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="UserControlRegistration.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="UserControlSettings.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

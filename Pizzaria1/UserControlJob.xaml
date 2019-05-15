@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="Pizzaria1.UserControlJob"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Pizzaria1"
+             mc:Ignorable="d" d:DesignWidth="800" Height="517.5">
+    <Grid>
+        <ListView BorderBrush="Black">
+            <ListViewItem>
+                <Label VerticalAlignment="Bottom" FontSize="18">Your Name</Label>
+            </ListViewItem>
+            <ListViewItem>
+                <TextBox BorderBrush="Black" Width="300" Name="txb_JobName" Background="#FFEEEEEE"></TextBox>
+            </ListViewItem>
+            <ListViewItem>
+                <Label VerticalAlignment="Bottom" FontSize="18">Your Surname</Label>
+            </ListViewItem>
+            <ListViewItem>
+                <TextBox BorderBrush="Black" Width="300" Name="txb_JobSurName" Background="#FFEEEEEE"></TextBox>
+            </ListViewItem>
+            <ListViewItem>
+                <Label VerticalAlignment="Bottom" FontSize="18">Your Phone</Label>
+            </ListViewItem>
+            <ListViewItem>
+                <TextBox BorderBrush="Black" Width="300" Name="txb_JobPhone" Background="#FFEEEEEE"/>
+            </ListViewItem>
+            <ListViewItem Margin="5,20,5,0">
+                <Button Name="SendRequestJob_Btn" Margin="40,0,0,0"  Style="{StaticResource NextButton}" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center" Click="SendRequestJob_Btn_Click">Send request</Button>
+            </ListViewItem>
+
+        </ListView>
+
+    </Grid>
+</UserControl>

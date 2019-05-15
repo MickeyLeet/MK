@@ -27,6 +27,9 @@ namespace PizzeriaService
 
 
         //[OperationContract]
+        //void ReturnProducts(string Name, string Price, string Description);
+
+        //[OperationContract]
         //DataUser GetUser(string login, string password);
 
 

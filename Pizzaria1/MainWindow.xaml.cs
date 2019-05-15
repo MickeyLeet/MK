@@ -54,7 +54,7 @@ namespace Pizzaria1
                     break;
                 case 3:
                     GridPrincipal.Children.Clear();
-                    GridPrincipal.Children.Add(new UserControlCart());
+                    GridPrincipal.Children.Add(new UserControlJob());
                     break;
                 case 4:
                     GridPrincipal.Children.Clear();
