@@ -56,9 +56,12 @@ namespace Pizzaria1
             {
                 bool isAdmin = client.Login(tb_Login.Text, tb_Password.Text);
 
-                MainWindow mainWindow = new MainWindow();
+                AdminWindow mainWindow = new AdminWindow();
                 this.Close();
                 mainWindow.Show();
+                //MainWindow mainWindow = new MainWindow();
+                //this.Close();
+                //mainWindow.Show();
 
 
             }
